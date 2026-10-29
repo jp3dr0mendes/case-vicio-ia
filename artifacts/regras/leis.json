@@ -1,0 +1,31 @@
+{
+  "_sobre": "Dicionário curado à mão (decisão manual registrada no README). Mapeia leis citadas e expressões que nomeiam a lei para temas de nível 1. Quando a árvore tem o mesmo tema em duas disciplinas, os dois IDs entram e o modelo aprende na folha-verdade qual convenção a equipe usa.",
+  "leis": [
+    {"nome": "Abuso de autoridade", "numeros": ["13869", "4898"], "expressoes": ["abuso de autoridade"], "temas": [4684, 6716]},
+    {"nome": "Biossegurança", "numeros": ["11105"], "expressoes": ["biosseguranca", "organismos geneticamente modificados"], "temas": [4685]},
+    {"nome": "Contravenções penais", "numeros": ["3688"], "expressoes": ["contravencao penal", "contravencoes penais", "lei das contravencoes"], "temas": [4686]},
+    {"nome": "Código Eleitoral", "numeros": ["4737", "9504"], "expressoes": ["crime eleitoral", "crimes eleitorais", "codigo eleitoral"], "temas": [4692]},
+    {"nome": "Crimes hediondos", "numeros": ["8072"], "expressoes": ["hediondo", "hediondos"], "temas": [4693]},
+    {"nome": "Crimes contra a ordem tributária", "numeros": ["8137", "4729"], "expressoes": ["ordem tributaria", "sonegacao fiscal"], "temas": [4695]},
+    {"nome": "Economia popular", "numeros": ["1521"], "expressoes": ["economia popular"], "temas": [4687]},
+    {"nome": "Sistema financeiro", "numeros": ["7492"], "expressoes": ["sistema financeiro nacional", "instituicao financeira"], "temas": [4689]},
+    {"nome": "Crimes ambientais", "numeros": ["9605"], "expressoes": ["crime ambiental", "crimes ambientais", "meio ambiente"], "temas": [4688, 6717]},
+    {"nome": "Racismo", "numeros": ["7716", "14532"], "expressoes": ["racismo", "injuria racial", "preconceito de raca"], "temas": [4690]},
+    {"nome": "Código de Trânsito", "numeros": ["9503"], "expressoes": ["codigo de transito", "veiculo automotor", "embriaguez ao volante"], "temas": [4691]},
+    {"nome": "CDC", "numeros": ["8078"], "expressoes": ["codigo de defesa do consumidor", "relacoes de consumo"], "temas": [4694]},
+    {"nome": "Estatuto da Pessoa Idosa", "numeros": ["10741"], "expressoes": ["estatuto do idoso", "estatuto da pessoa idosa", "pessoa idosa"], "temas": [4696, 6722]},
+    {"nome": "Estatuto do Desarmamento", "numeros": ["10826"], "expressoes": ["estatuto do desarmamento", "arma de fogo", "porte ilegal"], "temas": [4697]},
+    {"nome": "Genocídio", "numeros": ["2889"], "expressoes": ["genocidio"], "temas": [4698]},
+    {"nome": "Identificação criminal", "numeros": ["12037", "12654"], "expressoes": ["identificacao criminal", "perfil genetico"], "temas": [4699]},
+    {"nome": "Interceptação telefônica", "numeros": ["9296"], "expressoes": ["interceptacao telefonica", "interceptacao das comunicacoes"], "temas": [4700]},
+    {"nome": "Juizados especiais", "numeros": ["9099", "10259"], "expressoes": ["juizado especial criminal", "juizados especiais", "transacao penal", "suspensao condicional do processo", "menor potencial ofensivo"], "temas": [4701]},
+    {"nome": "Lavagem de dinheiro", "numeros": ["9613", "12683"], "expressoes": ["lavagem de dinheiro", "lavagem de capitais", "ocultacao de bens"], "temas": [4702, 6723]},
+    {"nome": "Maria da Penha", "numeros": ["11340"], "expressoes": ["maria da penha", "violencia domestica", "medidas protetivas de urgencia"], "temas": [4704, 6724]},
+    {"nome": "Execução penal", "numeros": ["7210"], "expressoes": ["execucao penal", "lei de execucao", "remicao", "progressao de regime", "livramento condicional", "regime disciplinar diferenciado"], "temas": [4703, 6734]},
+    {"nome": "Organizações criminosas", "numeros": ["12850"], "expressoes": ["organizacao criminosa", "organizacoes criminosas", "colaboracao premiada", "acao controlada", "infiltracao de agentes"], "temas": [4705, 6725]},
+    {"nome": "Terrorismo", "numeros": ["13260"], "expressoes": ["terrorismo", "terrorista"], "temas": [4706]},
+    {"nome": "Tortura", "numeros": ["9455"], "expressoes": ["tortura"], "temas": [4707]},
+    {"nome": "Drogas", "numeros": ["11343", "6368"], "expressoes": ["lei de drogas", "trafico de drogas", "entorpecente", "drogas"], "temas": [4708, 6728]},
+    {"nome": "ECA e violência contra criança", "numeros": ["8069", "13431", "14344"], "expressoes": ["estatuto da crianca", "crianca e adolescente", "ato infracional", "henry borel", "depoimento especial", "escuta especializada"], "temas": [4709]}
+  ]
+}

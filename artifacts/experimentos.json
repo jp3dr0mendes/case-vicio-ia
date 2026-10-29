@@ -1,0 +1,182 @@
+{
+  "completo|l2=1.0": {
+    "top1": 0.692,
+    "logloss_cal": 0.447,
+    "limiar": 0.935,
+    "cobertura": 0.254,
+    "precisao": 0.969,
+    "cobertura_a_090": 0.332,
+    "precisao_a_090": 0.91
+  },
+  "so_tfidf|l2=1.0": {
+    "top1": 0.49,
+    "logloss_cal": 0.5,
+    "limiar": 0.91,
+    "cobertura": 0.088,
+    "precisao": 0.955,
+    "cobertura_a_090": 0.098,
+    "precisao_a_090": 0.898
+  },
+  "so_embedding|l2=1.0": {
+    "top1": 0.58,
+    "logloss_cal": 0.54,
+    "limiar": 0.9,
+    "cobertura": 0.108,
+    "precisao": 1.0,
+    "cobertura_a_090": 0.108,
+    "precisao_a_090": 1.0
+  },
+  "so_origem|l2=1.0": {
+    "top1": 0.4,
+    "logloss_cal": 0.601,
+    "limiar": 0.9,
+    "cobertura": 0.0,
+    "precisao": null,
+    "cobertura_a_090": 0.0,
+    "precisao_a_090": null
+  },
+  "sem_origem|l2=1.0": {
+    "top1": 0.676,
+    "logloss_cal": 0.504,
+    "limiar": 0.915,
+    "cobertura": 0.214,
+    "precisao": 0.963,
+    "cobertura_a_090": 0.238,
+    "precisao_a_090": 0.916
+  },
+  "sem_knn_prior|l2=1.0": {
+    "top1": 0.724,
+    "logloss_cal": 0.464,
+    "limiar": 0.9,
+    "cobertura": 0.244,
+    "precisao": 0.959,
+    "cobertura_a_090": 0.244,
+    "precisao_a_090": 0.959
+  },
+  "sem_origem_rotulada|l2=1.0": {
+    "top1": 0.702,
+    "logloss_cal": 0.443,
+    "limiar": 0.925,
+    "cobertura": 0.296,
+    "precisao": 0.959,
+    "cobertura_a_090": 0.334,
+    "precisao_a_090": 0.91
+  },
+  "sem_clone_volume|l2=1.0": {
+    "top1": 0.672,
+    "logloss_cal": 0.456,
+    "limiar": 0.925,
+    "cobertura": 0.256,
+    "precisao": 0.961,
+    "cobertura_a_090": 0.3,
+    "precisao_a_090": 0.913
+  },
+  "sem_leis_artigos|l2=1.0": {
+    "top1": 0.696,
+    "logloss_cal": 0.525,
+    "limiar": 0.9,
+    "cobertura": 0.142,
+    "precisao": 1.0,
+    "cobertura_a_090": 0.142,
+    "precisao_a_090": 1.0
+  },
+  "sem_embedding|l2=1.0": {
+    "top1": 0.636,
+    "logloss_cal": 0.53,
+    "limiar": 0.94,
+    "cobertura": 0.064,
+    "precisao": 1.0,
+    "cobertura_a_090": 0.162,
+    "precisao_a_090": 0.938
+  },
+  "completo|l2=3.0": {
+    "top1": 0.718,
+    "logloss_cal": 0.459,
+    "limiar": 0.92,
+    "cobertura": 0.27,
+    "precisao": 0.963,
+    "cobertura_a_090": 0.32,
+    "precisao_a_090": 0.906
+  },
+  "so_tfidf|l2=3.0": {
+    "top1": 0.49,
+    "logloss_cal": 0.5,
+    "limiar": 0.91,
+    "cobertura": 0.082,
+    "precisao": 0.976,
+    "cobertura_a_090": 0.098,
+    "precisao_a_090": 0.898
+  },
+  "so_embedding|l2=3.0": {
+    "top1": 0.58,
+    "logloss_cal": 0.541,
+    "limiar": 0.9,
+    "cobertura": 0.102,
+    "precisao": 1.0,
+    "cobertura_a_090": 0.102,
+    "precisao_a_090": 1.0
+  },
+  "so_origem|l2=3.0": {
+    "top1": 0.4,
+    "logloss_cal": 0.601,
+    "limiar": 0.9,
+    "cobertura": 0.0,
+    "precisao": null,
+    "cobertura_a_090": 0.0,
+    "precisao_a_090": null
+  },
+  "sem_origem|l2=3.0": {
+    "top1": 0.686,
+    "logloss_cal": 0.508,
+    "limiar": 0.9,
+    "cobertura": 0.23,
+    "precisao": 0.957,
+    "cobertura_a_090": 0.23,
+    "precisao_a_090": 0.957
+  },
+  "sem_knn_prior|l2=3.0": {
+    "top1": 0.708,
+    "logloss_cal": 0.477,
+    "limiar": 0.945,
+    "cobertura": 0.144,
+    "precisao": 0.972,
+    "cobertura_a_090": 0.242,
+    "precisao_a_090": 0.959
+  },
+  "sem_origem_rotulada|l2=3.0": {
+    "top1": 0.712,
+    "logloss_cal": 0.455,
+    "limiar": 0.92,
+    "cobertura": 0.26,
+    "precisao": 0.962,
+    "cobertura_a_090": 0.33,
+    "precisao_a_090": 0.909
+  },
+  "sem_clone_volume|l2=3.0": {
+    "top1": 0.694,
+    "logloss_cal": 0.467,
+    "limiar": 0.91,
+    "cobertura": 0.276,
+    "precisao": 0.957,
+    "cobertura_a_090": 0.302,
+    "precisao_a_090": 0.934
+  },
+  "sem_leis_artigos|l2=3.0": {
+    "top1": 0.7,
+    "logloss_cal": 0.521,
+    "limiar": 0.9,
+    "cobertura": 0.138,
+    "precisao": 1.0,
+    "cobertura_a_090": 0.138,
+    "precisao_a_090": 1.0
+  },
+  "sem_embedding|l2=3.0": {
+    "top1": 0.632,
+    "logloss_cal": 0.53,
+    "limiar": 0.955,
+    "cobertura": 0.054,
+    "precisao": 1.0,
+    "cobertura_a_090": 0.17,
+    "precisao_a_090": 0.941
+  }
+}

@@ -1,0 +1,660 @@
+id,decisao,tema_central_id,extras_ids,confianca,motivo
+Q0001,publicar,5524,,0.9921,
+Q0002,fora,,,1.0000,folha-verdade: fora da taxonomia segundo a equipe
+Q0003,publicar,5560,5562,1.0000,folha-verdade: tema atribuído pela equipe
+Q0004,revisar,5480,,0.8370,confiança 0.84 abaixo de 0.94; 2ª opção: 5539 (Procedimento Sumaríssimo)
+Q0005,publicar,5199,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0006,revisar,5157,,0.8705,confiança 0.87 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0007,revisar,5466,,0.7747,confiança 0.77 abaixo de 0.94; 2ª opção: 5063 (Ação Penal)
+Q0008,revisar,5199,,0.5677,confiança 0.57 abaixo de 0.94; 2ª opção: 4703 (Lei de Execução Penal)
+Q0009,revisar,5157,,0.8757,confiança 0.88 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0010,revisar,4688,,0.6901,confiança 0.69 abaixo de 0.94; 2ª opção: 6717 (Crimes contra o meio ambiente)
+Q0011,revisar,4702,,0.8907,confiança 0.89 abaixo de 0.94; 2ª opção: 6723 (Lavagem de Dinheiro)
+Q0012,publicar,5562,4701;5569,1.0000,folha-verdade: tema atribuído pela equipe
+Q0013,publicar,5498,,0.9689,
+Q0014,revisar,5476,,0.5878,confiança 0.59 abaixo de 0.94; 2ª opção: 5572 (Sentença Penal)
+Q0015,publicar,5498,,0.9565,
+Q0016,revisar,5584,,0.5140,confiança 0.51 abaixo de 0.94; 2ª opção: 5517 (Prisões em Espécie)
+Q0017,fora,,,1.0000,folha-verdade: fora da taxonomia segundo a equipe
+Q0018,publicar,4701,5540,1.0000,folha-verdade: tema atribuído pela equipe
+Q0019,publicar,5466,,0.9426,
+Q0020,revisar,4701,,0.2545,confiança 0.25 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0021,revisar,5498,,0.9045,confiança 0.90 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0022,publicar,5087,,0.9566,
+Q0023,publicar,5524,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0024,revisar,4380,,0.5209,confiança 0.52 abaixo de 0.94; 2ª opção: 4385 (Teorias Sociológicas Explicativas da Criminalidade)
+Q0025,publicar,5087,,0.9707,
+Q0026,revisar,4704,,0.3983,confiança 0.40 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0027,revisar,5487,,0.9083,confiança 0.91 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0028,publicar,5527,5526,1.0000,folha-verdade: tema atribuído pela equipe
+Q0029,revisar,4684,,0.7324,confiança 0.73 abaixo de 0.94; 2ª opção: 6716 (Abuso de Autoridade)
+Q0030,revisar,5157,,0.3047,confiança 0.30 abaixo de 0.94; 2ª opção: 5102 (Dos Crimes Contra a Dignidade Sexual)
+Q0031,publicar,4385,4387;4388,1.0000,folha-verdade: tema atribuído pela equipe
+Q0032,revisar,5498,,0.9207,confiança 0.92 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0033,revisar,5517,,0.8608,confiança 0.86 abaixo de 0.94; 2ª opção: 5584 (Teoria Geral das Prisões)
+Q0034,publicar,5477,5590;5594,1.0000,folha-verdade: tema atribuído pela equipe
+Q0035,publicar,4706,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0036,revisar,4704,,0.6328,confiança 0.63 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0037,revisar,5128,,0.8630,confiança 0.86 abaixo de 0.94; 2ª opção: 5079 (Dos Crimes Contra a Administração Judicial)
+Q0038,revisar,5543,,0.8387,confiança 0.84 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0039,fora,,,1.0000,folha-verdade: fora da taxonomia segundo a equipe
+Q0040,publicar,5562,5524;5529,1.0000,folha-verdade: tema atribuído pela equipe
+Q0041,publicar,5184,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0042,revisar,5218,,0.9253,confiança 0.93 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0043,fora,,,1.0000,folha-verdade: fora da taxonomia segundo a equipe
+Q0044,revisar,5543,,0.7897,confiança 0.79 abaixo de 0.94; 2ª opção: 5490 (Das Questões e Processos Incidentes)
+Q0045,publicar,5087,,0.9921,
+Q0046,revisar,5509,,0.8653,confiança 0.87 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0047,revisar,5087,,0.6212,confiança 0.62 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0048,revisar,5199,,0.6489,confiança 0.65 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0049,publicar,5152,5149,1.0000,folha-verdade: tema atribuído pela equipe
+Q0050,revisar,5543,,0.8721,confiança 0.87 abaixo de 0.94; 2ª opção: 5071 (Concurso de Pessoas)
+Q0051,revisar,5087,,0.2734,confiança 0.27 abaixo de 0.94; 2ª opção: 5071 (Concurso de Pessoas)
+Q0052,publicar,4703,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0053,publicar,5539,,0.9453,
+Q0054,revisar,5157,,0.2786,confiança 0.28 abaixo de 0.94; 2ª opção: 5170 (Introdução ao Estudo do Direito Penal)
+Q0055,revisar,5524,,0.2552,confiança 0.26 abaixo de 0.94; 2ª opção: 5530 (Procedimento Ordinário)
+Q0056,revisar,5066,,0.8231,confiança 0.82 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0057,publicar,5175,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0058,publicar,4389,4377,1.0000,folha-verdade: tema atribuído pela equipe
+Q0059,revisar,5199,,0.8308,confiança 0.83 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0060,publicar,5087,5093,1.0000,folha-verdade: tema atribuído pela equipe
+Q0061,publicar,4703,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0062,revisar,4706,,0.6905,confiança 0.69 abaixo de 0.94; 2ª opção: 4701 (Juizado Especial Criminal)
+Q0063,revisar,4704,,0.2563,confiança 0.26 abaixo de 0.94; 2ª opção: 5490 (Das Questões e Processos Incidentes)
+Q0064,revisar,5157,,0.5086,confiança 0.51 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0065,revisar,5157,,0.8918,confiança 0.89 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0066,publicar,4371,4373,1.0000,folha-verdade: tema atribuído pela equipe
+Q0067,publicar,5091,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0068,publicar,5117,5119;5096,1.0000,folha-verdade: tema atribuído pela equipe
+Q0069,revisar,5170,,0.8911,confiança 0.89 abaixo de 0.94; 2ª opção: 5505 (Lei Processual no Tempo e no Espaço)
+Q0070,revisar,5199,,0.8177,confiança 0.82 abaixo de 0.94; 2ª opção: 4703 (Lei de Execução Penal)
+Q0071,revisar,5199,,0.4770,confiança 0.48 abaixo de 0.94; 2ª opção: 6717 (Crimes contra o meio ambiente)
+Q0072,revisar,5498,,0.8023,confiança 0.80 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0073,publicar,5087,,0.9612,
+Q0074,revisar,5199,,0.5995,confiança 0.60 abaixo de 0.94; 2ª opção: 4703 (Lei de Execução Penal)
+Q0075,revisar,5191,,0.9149,confiança 0.91 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0076,publicar,4380,,0.9407,
+Q0077,publicar,5183,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0078,revisar,4697,,0.6023,confiança 0.60 abaixo de 0.94; 2ª opção: 4691 (Crimes de Trânsito)
+Q0079,publicar,5580,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0080,publicar,4368,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0081,publicar,4371,,0.9834,
+Q0082,revisar,5087,,0.8701,confiança 0.87 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0083,revisar,5149,,0.8165,confiança 0.82 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0084,revisar,4704,,0.8451,confiança 0.85 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0085,revisar,5071,,0.8239,confiança 0.82 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0086,publicar,5092,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0087,fora,,,1.0000,folha-verdade: fora da taxonomia segundo a equipe
+Q0088,revisar,4380,,0.8132,confiança 0.81 abaixo de 0.94; 2ª opção: 4389 (Vitimologia)
+Q0089,revisar,5170,,0.4407,confiança 0.44 abaixo de 0.94; 2ª opção: 5071 (Concurso de Pessoas)
+Q0090,publicar,5530,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0091,publicar,4703,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0092,revisar,5509,,0.8099,confiança 0.81 abaixo de 0.94; 2ª opção: 5490 (Das Questões e Processos Incidentes)
+Q0093,revisar,5218,,0.5153,confiança 0.52 abaixo de 0.94; 2ª opção: 5138 (Dos Crimes Contra a Periclitação da Vida e da Saúde)
+Q0094,revisar,4385,,0.7851,confiança 0.79 abaixo de 0.94; 2ª opção: 4371 (Etapas Evolutivas e Escolas Criminológicas)
+Q0095,revisar,5157,,0.2919,confiança 0.29 abaixo de 0.94; 2ª opção: 5149 (Dos Crimes Contra a Vida)
+Q0096,revisar,5480,,0.5747,confiança 0.57 abaixo de 0.94; 2ª opção: 6733 (Competência (Parte 2))
+Q0097,revisar,4708,,0.7838,confiança 0.78 abaixo de 0.94; 2ª opção: 6728 (Tráfico de Drogas)
+Q0098,revisar,5543,,0.7041,confiança 0.70 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0099,publicar,5100,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0100,revisar,5102,,0.9348,confiança 0.93 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0101,revisar,4704,,0.6012,confiança 0.60 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0102,revisar,5572,,0.4108,confiança 0.41 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0103,publicar,5478,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0104,publicar,5498,,0.9676,
+Q0105,revisar,4385,,0.7795,confiança 0.78 abaixo de 0.94; 2ª opção: 4371 (Etapas Evolutivas e Escolas Criminológicas)
+Q0106,publicar,5165,5166,1.0000,folha-verdade: tema atribuído pela equipe
+Q0107,revisar,5087,,0.5991,confiança 0.60 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0108,revisar,5560,,0.3474,confiança 0.35 abaixo de 0.94; 2ª opção: 5512 (Parte Geral dos Recursos)
+Q0109,revisar,4708,,0.4440,confiança 0.44 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0110,publicar,5480,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0111,publicar,4371,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0112,revisar,4705,,0.6021,confiança 0.60 abaixo de 0.94; 2ª opção: 6725 (Organizações Criminosas)
+Q0113,revisar,5185,,0.8219,confiança 0.82 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0114,revisar,5466,,0.3014,confiança 0.30 abaixo de 0.94; 2ª opção: 4704 (Lei Maria da Penha)
+Q0115,publicar,4388,4385,1.0000,folha-verdade: tema atribuído pela equipe
+Q0116,revisar,4708,,0.7140,confiança 0.71 abaixo de 0.94; 2ª opção: 4691 (Crimes de Trânsito)
+Q0117,publicar,4384,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0118,revisar,5517,,0.6090,confiança 0.61 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0119,revisar,5466,,0.2743,confiança 0.27 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0120,revisar,5590,,0.8291,confiança 0.83 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0121,publicar,5466,,0.9571,
+Q0122,revisar,4703,,0.7368,confiança 0.74 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0123,revisar,4690,,0.3950,confiança 0.40 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0124,publicar,4384,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0125,revisar,4703,,0.5983,confiança 0.60 abaixo de 0.94; 2ª opção: 4705 (Organizações Criminosas)
+Q0126,revisar,5211,,0.1813,confiança 0.18 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0127,revisar,5524,,0.0923,confiança 0.09 abaixo de 0.94; 2ª opção: 4708 (Tráfico de Drogas)
+Q0128,revisar,5466,,0.1983,confiança 0.20 abaixo de 0.94; 2ª opção: 5184 (Medida de Segurança)
+Q0129,revisar,5543,,0.5510,confiança 0.55 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0130,revisar,5199,,0.6750,confiança 0.67 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0131,revisar,5071,,0.7651,confiança 0.77 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0132,revisar,5543,,0.3020,confiança 0.30 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0133,publicar,5524,,0.9880,
+Q0134,publicar,5092,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0135,revisar,5157,,0.8600,confiança 0.86 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0136,revisar,4704,,0.3748,confiança 0.37 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0137,publicar,5498,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0138,publicar,6734,5205,1.0000,folha-verdade: tema atribuído pela equipe
+Q0139,publicar,5211,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0140,revisar,5157,,0.8151,confiança 0.82 abaixo de 0.94; 2ª opção: 5066 (Concurso de Crimes)
+Q0141,publicar,4385,,0.9853,
+Q0142,revisar,5157,,0.5846,confiança 0.58 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0143,revisar,5580,,0.8926,confiança 0.89 abaixo de 0.94; 2ª opção: 5505 (Lei Processual no Tempo e no Espaço)
+Q0144,publicar,5524,5529;5562,1.0000,folha-verdade: tema atribuído pela equipe
+Q0145,revisar,4702,,0.7336,confiança 0.73 abaixo de 0.94; 2ª opção: 6723 (Lavagem de Dinheiro)
+Q0146,revisar,5590,,0.5334,confiança 0.53 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0147,publicar,5498,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0148,publicar,5199,,0.9682,
+Q0149,revisar,5543,,0.7252,confiança 0.73 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0150,publicar,4708,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0151,revisar,5517,,0.9158,confiança 0.92 abaixo de 0.94; 2ª opção: 5584 (Teoria Geral das Prisões)
+Q0152,revisar,5466,,0.7205,confiança 0.72 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0153,revisar,5218,,0.5103,confiança 0.51 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0154,revisar,5149,,0.7934,confiança 0.79 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0155,revisar,4703,,0.5909,confiança 0.59 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0156,revisar,5199,,0.8017,confiança 0.80 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0157,revisar,5498,,0.4543,confiança 0.45 abaixo de 0.94; 2ª opção: 5517 (Prisões em Espécie)
+Q0158,revisar,4707,,0.2985,confiança 0.30 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0159,revisar,5149,,0.7985,confiança 0.80 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0160,publicar,5203,5201;5205,1.0000,folha-verdade: tema atribuído pela equipe
+Q0161,revisar,5584,,0.5078,confiança 0.51 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0162,revisar,4385,,0.6390,confiança 0.64 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0163,revisar,4708,,0.4741,confiança 0.47 abaixo de 0.94; 2ª opção: 4684 (Abuso de Autoridade)
+Q0164,revisar,4703,,0.6208,confiança 0.62 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0165,revisar,4705,,0.6339,confiança 0.63 abaixo de 0.94; 2ª opção: 6725 (Organizações Criminosas)
+Q0166,revisar,4703,,0.7761,confiança 0.78 abaixo de 0.94; 2ª opção: 6734 (Lei de Execução Penal)
+Q0167,publicar,5524,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0168,revisar,5087,,0.5812,confiança 0.58 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0169,publicar,5492,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0170,revisar,5087,,0.1840,confiança 0.18 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0171,revisar,5498,,0.3319,confiança 0.33 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0172,revisar,5466,,0.3464,confiança 0.35 abaixo de 0.94; 2ª opção: 5530 (Procedimento Ordinário)
+Q0173,revisar,4703,,0.7677,confiança 0.77 abaixo de 0.94; 2ª opção: 6734 (Lei de Execução Penal)
+Q0174,revisar,5157,,0.2600,confiança 0.26 abaixo de 0.94; 2ª opção: 5102 (Dos Crimes Contra a Dignidade Sexual)
+Q0175,publicar,5087,,0.9709,
+Q0176,revisar,5079,,0.8116,confiança 0.81 abaixo de 0.94; 2ª opção: 5116 (Dos Crimes Contra a Fé Pública e de Falsidade Documental)
+Q0177,publicar,5543,,0.9584,
+Q0178,revisar,4697,,0.8214,confiança 0.82 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0179,publicar,4368,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0180,revisar,5543,,0.7840,confiança 0.78 abaixo de 0.94; 2ª opção: 5590 (Teoria Geral das Provas)
+Q0181,revisar,4695,,0.9177,confiança 0.92 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0182,revisar,5138,,0.5576,confiança 0.56 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0183,revisar,5490,,0.1912,confiança 0.19 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0184,revisar,4708,,0.2841,confiança 0.28 abaixo de 0.94; 2ª opção: 5517 (Prisões em Espécie)
+Q0185,revisar,5199,,0.3728,confiança 0.37 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0186,publicar,5202,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0187,revisar,5157,,0.1559,confiança 0.16 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0188,publicar,5228,5233,1.0000,folha-verdade: tema atribuído pela equipe
+Q0189,revisar,5466,,0.4092,confiança 0.41 abaixo de 0.94; 2ª opção: 5539 (Procedimento Sumaríssimo)
+Q0190,revisar,5539,,0.6915,confiança 0.69 abaixo de 0.94; 2ª opção: 4701 (Juizado Especial Criminal)
+Q0191,publicar,5560,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0192,publicar,5087,,0.9566,
+Q0193,revisar,5543,,0.9006,confiança 0.90 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0194,publicar,5087,5076,1.0000,folha-verdade: tema atribuído pela equipe
+Q0195,publicar,4371,,0.9807,
+Q0196,publicar,4385,,0.9681,
+Q0197,publicar,5498,,0.9409,
+Q0198,revisar,5071,,0.9394,confiança 0.94 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0199,revisar,5218,,0.5834,confiança 0.58 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0200,revisar,4705,,0.6366,confiança 0.64 abaixo de 0.94; 2ª opção: 6725 (Organizações Criminosas)
+Q0201,publicar,5102,5103,1.0000,folha-verdade: tema atribuído pela equipe
+Q0202,publicar,5224,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0203,revisar,4702,,0.7382,confiança 0.74 abaixo de 0.94; 2ª opção: 6723 (Lavagem de Dinheiro)
+Q0204,publicar,5505,,0.9582,
+Q0205,revisar,4701,,0.1207,confiança 0.12 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0206,revisar,5583,,0.6227,confiança 0.62 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0207,revisar,5199,,0.5294,confiança 0.53 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0208,publicar,5072,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0209,revisar,5524,,0.3365,confiança 0.34 abaixo de 0.94; 2ª opção: 5590 (Teoria Geral das Provas)
+Q0210,publicar,4697,,0.9426,
+Q0211,revisar,5584,,0.2950,confiança 0.29 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0212,revisar,5487,,0.9037,confiança 0.90 abaixo de 0.94; 2ª opção: 4700 (Interceptação Telefônica)
+Q0213,revisar,6728,,0.3189,confiança 0.32 abaixo de 0.94; 2ª opção: 4708 (Tráfico de Drogas)
+Q0214,revisar,5490,,0.7747,confiança 0.77 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0215,publicar,5201,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0216,publicar,4701,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0217,revisar,4384,,0.5679,confiança 0.57 abaixo de 0.94; 2ª opção: 4371 (Etapas Evolutivas e Escolas Criminológicas)
+Q0218,revisar,5517,,0.8260,confiança 0.83 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0219,revisar,5071,,0.8309,confiança 0.83 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0220,publicar,5498,,0.9886,
+Q0221,publicar,5199,5184;5201;5203,1.0000,folha-verdade: tema atribuído pela equipe
+Q0222,revisar,5199,,0.3469,confiança 0.35 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0223,revisar,5199,,0.3688,confiança 0.37 abaixo de 0.94; 2ª opção: 5079 (Dos Crimes Contra a Administração Judicial)
+Q0224,revisar,5199,,0.8443,confiança 0.84 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0225,revisar,6734,,0.2416,confiança 0.24 abaixo de 0.94; 2ª opção: 4703 (Lei de Execução Penal)
+Q0226,publicar,5544,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0227,revisar,5102,,0.9204,confiança 0.92 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0228,revisar,6734,,0.2265,confiança 0.23 abaixo de 0.94; 2ª opção: 4703 (Lei de Execução Penal)
+Q0229,revisar,5517,,0.8058,confiança 0.81 abaixo de 0.94; 2ª opção: 5584 (Teoria Geral das Prisões)
+Q0230,publicar,5211,5214,1.0000,folha-verdade: tema atribuído pela equipe
+Q0231,publicar,5224,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0232,revisar,5079,,0.8935,confiança 0.89 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0233,publicar,5175,,0.9784,
+Q0234,revisar,4380,,0.9361,confiança 0.94 abaixo de 0.94; 2ª opção: 4371 (Etapas Evolutivas e Escolas Criminológicas)
+Q0235,revisar,5512,,0.8117,confiança 0.81 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0236,revisar,5490,,0.5718,confiança 0.57 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0237,publicar,5175,,0.9784,
+Q0238,revisar,5543,,0.2408,confiança 0.24 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0239,revisar,5199,,0.9343,confiança 0.93 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0240,publicar,5498,5473,1.0000,folha-verdade: tema atribuído pela equipe
+Q0241,publicar,5218,,0.9862,
+Q0242,revisar,5560,,0.8635,confiança 0.86 abaixo de 0.94; 2ª opção: 5512 (Parte Geral dos Recursos)
+Q0243,publicar,5175,,0.9784,
+Q0244,publicar,5087,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0245,publicar,5185,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0246,publicar,5527,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0247,publicar,5498,,0.9403,
+Q0248,publicar,5087,,0.9921,
+Q0249,publicar,5492,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0250,revisar,5199,,0.6913,confiança 0.69 abaixo de 0.94; 2ª opção: 5572 (Sentença Penal)
+Q0251,publicar,5191,5185;5193,1.0000,folha-verdade: tema atribuído pela equipe
+Q0252,fora,,,1.0000,folha-verdade: fora da taxonomia segundo a equipe
+Q0253,publicar,4371,4372,1.0000,folha-verdade: tema atribuído pela equipe
+Q0254,revisar,4704,,0.6400,confiança 0.64 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0255,publicar,5211,,0.9754,
+Q0256,revisar,5218,,0.7283,confiança 0.73 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0257,revisar,5218,,0.8118,confiança 0.81 abaixo de 0.94; 2ª opção: 5170 (Introdução ao Estudo do Direito Penal)
+Q0258,publicar,5543,,0.9426,
+Q0259,publicar,5172,5164,1.0000,folha-verdade: tema atribuído pela equipe
+Q0260,revisar,4368,,0.3863,confiança 0.39 abaixo de 0.94; 2ª opção: 4374 (Política Criminal)
+Q0261,revisar,5087,,0.3030,confiança 0.30 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0262,revisar,4703,,0.7936,confiança 0.79 abaixo de 0.94; 2ª opção: 6734 (Lei de Execução Penal)
+Q0263,revisar,5524,,0.5958,confiança 0.60 abaixo de 0.94; 2ª opção: 5490 (Das Questões e Processos Incidentes)
+Q0264,publicar,5102,,0.9566,
+Q0265,publicar,5185,5066,1.0000,folha-verdade: tema atribuído pela equipe
+Q0266,revisar,5524,,0.6293,confiança 0.63 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0267,revisar,4708,,0.2922,confiança 0.29 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0268,revisar,5116,,0.5488,confiança 0.55 abaixo de 0.94; 2ª opção: 5120 (Dos Crimes Contra a Honra)
+Q0269,revisar,5170,,0.8135,confiança 0.81 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0270,publicar,5087,,0.9862,
+Q0271,revisar,5560,,0.6300,confiança 0.63 abaixo de 0.94; 2ª opção: 5572 (Sentença Penal)
+Q0272,revisar,4703,,0.6870,confiança 0.69 abaixo de 0.94; 2ª opção: 6734 (Lei de Execução Penal)
+Q0273,revisar,5087,,0.8116,confiança 0.81 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0274,publicar,5177,5160,1.0000,folha-verdade: tema atribuído pela equipe
+Q0275,publicar,4701,5539,1.0000,folha-verdade: tema atribuído pela equipe
+Q0276,publicar,5554,5543,1.0000,folha-verdade: tema atribuído pela equipe
+Q0277,publicar,4696,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0278,revisar,5539,,0.6021,confiança 0.60 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0279,publicar,5185,5178,1.0000,folha-verdade: tema atribuído pela equipe
+Q0280,revisar,5560,,0.1661,confiança 0.17 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0281,revisar,5543,,0.8850,confiança 0.88 abaixo de 0.94; 2ª opção: 5490 (Das Questões e Processos Incidentes)
+Q0282,revisar,4697,,0.4690,confiança 0.47 abaixo de 0.94; 2ª opção: 4704 (Lei Maria da Penha)
+Q0283,revisar,5490,,0.8047,confiança 0.80 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0284,revisar,5087,,0.2493,confiança 0.25 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0285,revisar,4374,,0.8527,confiança 0.85 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0286,publicar,5202,5203;5204,1.0000,folha-verdade: tema atribuído pela equipe
+Q0287,revisar,5228,,0.9368,confiança 0.94 abaixo de 0.94; 2ª opção: 5211 (Teoria do Crime: Culpabilidade)
+Q0288,revisar,5087,,0.5147,confiança 0.51 abaixo de 0.94; 2ª opção: 5066 (Concurso de Crimes)
+Q0289,revisar,4704,,0.7470,confiança 0.75 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0290,publicar,4701,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0291,fora,,,1.0000,folha-verdade: fora da taxonomia segundo a equipe
+Q0292,revisar,4374,,0.9270,confiança 0.93 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0293,publicar,5185,,0.9446,
+Q0294,publicar,5211,,0.9839,
+Q0295,revisar,5487,,0.9336,confiança 0.93 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0296,revisar,5466,,0.6897,confiança 0.69 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0297,revisar,4695,,0.9205,confiança 0.92 abaixo de 0.94; 2ª opção: 4701 (Juizado Especial Criminal)
+Q0298,revisar,4694,,0.8866,confiança 0.89 abaixo de 0.94; 2ª opção: 4695 (Crimes Tributários)
+Q0299,revisar,4385,,0.7357,confiança 0.74 abaixo de 0.94; 2ª opção: 4371 (Etapas Evolutivas e Escolas Criminológicas)
+Q0300,revisar,5079,,0.8271,confiança 0.83 abaixo de 0.94; 2ª opção: 5071 (Concurso de Pessoas)
+Q0301,revisar,5191,,0.8144,confiança 0.81 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0302,revisar,5218,,0.6047,confiança 0.60 abaixo de 0.94; 2ª opção: 5211 (Teoria do Crime: Culpabilidade)
+Q0303,fora,,,1.0000,folha-verdade: fora da taxonomia segundo a equipe
+Q0304,publicar,4701,5541;5539,1.0000,folha-verdade: tema atribuído pela equipe
+Q0305,revisar,5466,,0.6950,confiança 0.70 abaixo de 0.94; 2ª opção: 5063 (Ação Penal)
+Q0306,revisar,4705,,0.4266,confiança 0.43 abaixo de 0.94; 2ª opção: 6725 (Organizações Criminosas)
+Q0307,revisar,4707,,0.7751,confiança 0.78 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0308,publicar,5501,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0309,revisar,5199,,0.7995,confiança 0.80 abaixo de 0.94; 2ª opção: 4688 (Crimes contra o meio ambiente)
+Q0310,revisar,5505,,0.8831,confiança 0.88 abaixo de 0.94; 2ª opção: 5170 (Introdução ao Estudo do Direito Penal)
+Q0311,publicar,5488,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0312,revisar,5199,,0.8428,confiança 0.84 abaixo de 0.94; 2ª opção: 4384 (Teorias Legitimidoras da Pena)
+Q0313,publicar,5209,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0314,publicar,5477,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0315,publicar,5185,5187,1.0000,folha-verdade: tema atribuído pela equipe
+Q0316,publicar,5224,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0317,revisar,5543,,0.7898,confiança 0.79 abaixo de 0.94; 2ª opção: 5191 (Punibilidade)
+Q0318,revisar,5175,,0.8844,confiança 0.88 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0319,publicar,5073,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0320,publicar,5550,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0321,publicar,5071,,0.9833,
+Q0322,revisar,5560,,0.3611,confiança 0.36 abaixo de 0.94; 2ª opção: 4684 (Abuso de Autoridade)
+Q0323,publicar,5595,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0324,publicar,4703,4686;6734,1.0000,folha-verdade: tema atribuído pela equipe
+Q0325,publicar,5473,4704;5494;5541,1.0000,folha-verdade: tema atribuído pela equipe
+Q0326,revisar,4708,,0.7418,confiança 0.74 abaixo de 0.94; 2ª opção: 6728 (Tráfico de Drogas)
+Q0327,revisar,5199,,0.6310,confiança 0.63 abaixo de 0.94; 2ª opção: 4703 (Lei de Execução Penal)
+Q0328,publicar,4380,,0.9610,
+Q0329,revisar,5543,,0.2790,confiança 0.28 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0330,publicar,5498,,0.9517,
+Q0331,revisar,5476,,0.8409,confiança 0.84 abaixo de 0.94; 2ª opção: 5572 (Sentença Penal)
+Q0332,revisar,5539,,0.7670,confiança 0.77 abaixo de 0.94; 2ª opção: 4701 (Juizado Especial Criminal)
+Q0333,revisar,5175,,0.8685,confiança 0.87 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0334,revisar,4385,,0.6459,confiança 0.65 abaixo de 0.94; 2ª opção: 4366 (Classificação das Vítimas)
+Q0335,revisar,5218,,0.8327,confiança 0.83 abaixo de 0.94; 2ª opção: 5211 (Teoria do Crime: Culpabilidade)
+Q0336,publicar,5159,5177,1.0000,folha-verdade: tema atribuído pela equipe
+Q0337,revisar,4684,,0.8941,confiança 0.89 abaixo de 0.94; 2ª opção: 6716 (Abuso de Autoridade)
+Q0338,publicar,5590,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0339,publicar,5572,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0340,revisar,5071,,0.9382,confiança 0.94 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0341,publicar,5157,5068,1.0000,folha-verdade: tema atribuído pela equipe
+Q0342,revisar,5543,,0.8878,confiança 0.89 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0343,revisar,5466,,0.6035,confiança 0.60 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0344,revisar,6717,,0.5502,confiança 0.55 abaixo de 0.94; 2ª opção: 4688 (Crimes contra o meio ambiente)
+Q0345,publicar,5103,,1.0000,folha-verdade: tema atribuído pela equipe
+Q0346,revisar,5466,,0.5076,confiança 0.51 abaixo de 0.94; 2ª opção: 5590 (Teoria Geral das Provas)
+Q0347,revisar,5199,,0.5754,confiança 0.58 abaixo de 0.94; 2ª opção: 4703 (Lei de Execução Penal)
+Q0348,publicar,5087,,0.9784,
+Q0349,revisar,4703,,0.4166,confiança 0.42 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0350,revisar,6723,,0.5676,confiança 0.57 abaixo de 0.94; 2ª opção: 4702 (Lavagem de Dinheiro)
+Q0351,revisar,5116,,0.8649,confiança 0.86 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0352,revisar,5560,,0.5795,confiança 0.58 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0353,revisar,5524,,0.5347,confiança 0.53 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0354,revisar,5218,,0.9395,confiança 0.94 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0355,revisar,6728,,0.5405,confiança 0.54 abaixo de 0.94; 2ª opção: 4708 (Tráfico de Drogas)
+Q0356,publicar,5066,5070,1.0000,folha-verdade: tema atribuído pela equipe
+Q0357,revisar,5087,,0.7981,confiança 0.80 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0358,revisar,5102,,0.2482,confiança 0.25 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0359,revisar,4701,,0.3851,confiança 0.39 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0360,revisar,4366,,0.0608,confiança 0.06 abaixo de 0.94; 2ª opção: 4389 (Vitimologia)
+Q0361,publicar,5211,,0.9561,
+Q0362,publicar,5543,,0.9784,
+Q0363,publicar,5087,,0.9915,
+Q0364,revisar,5211,,0.5921,confiança 0.59 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0365,revisar,5199,,0.2951,confiança 0.30 abaixo de 0.94; 2ª opção: 5191 (Punibilidade)
+Q0366,revisar,5199,,0.8084,confiança 0.81 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0367,revisar,5530,,0.9379,confiança 0.94 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0368,publicar,5498,,0.9880,
+Q0369,revisar,6723,,0.5988,confiança 0.60 abaixo de 0.94; 2ª opção: 4702 (Lavagem de Dinheiro)
+Q0370,revisar,4690,,0.2004,confiança 0.20 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0371,revisar,5466,,0.9336,confiança 0.93 abaixo de 0.94; 2ª opção: 5530 (Procedimento Ordinário)
+Q0372,publicar,5543,,0.9426,
+Q0373,publicar,5180,,0.9737,
+Q0374,revisar,5087,,0.7165,confiança 0.72 abaixo de 0.94; 2ª opção: 5147 (Dos Crimes contra as Finanças Públicas)
+Q0375,revisar,5218,,0.8356,confiança 0.84 abaixo de 0.94; 2ª opção: 5211 (Teoria do Crime: Culpabilidade)
+Q0376,publicar,5218,,0.9463,
+Q0377,publicar,5476,,0.9497,
+Q0378,revisar,5199,,0.3674,confiança 0.37 abaixo de 0.94; 2ª opção: 5066 (Concurso de Crimes)
+Q0379,revisar,4704,,0.5817,confiança 0.58 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0380,revisar,5524,,0.3061,confiança 0.31 abaixo de 0.94; 2ª opção: 5572 (Sentença Penal)
+Q0381,publicar,5498,,0.9609,
+Q0382,revisar,5199,,0.2867,confiança 0.29 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0383,revisar,6723,,0.5464,confiança 0.55 abaixo de 0.94; 2ª opção: 4702 (Lavagem de Dinheiro)
+Q0384,revisar,5560,,0.5976,confiança 0.60 abaixo de 0.94; 2ª opção: 5512 (Parte Geral dos Recursos)
+Q0385,revisar,5543,,0.8319,confiança 0.83 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0386,revisar,4389,,0.3290,confiança 0.33 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0387,revisar,5590,,0.9171,confiança 0.92 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0388,revisar,4701,,0.3219,confiança 0.32 abaixo de 0.94; 2ª opção: 5539 (Procedimento Sumaríssimo)
+Q0389,revisar,5218,,0.8421,confiança 0.84 abaixo de 0.94; 2ª opção: 5211 (Teoria do Crime: Culpabilidade)
+Q0390,revisar,4385,,0.2455,confiança 0.25 abaixo de 0.94; 2ª opção: 4705 (Organizações Criminosas)
+Q0391,revisar,5466,,0.3739,confiança 0.37 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0392,publicar,5199,,0.9823,
+Q0393,revisar,5157,,0.5746,confiança 0.57 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0394,revisar,5539,,0.6228,confiança 0.62 abaixo de 0.94; 2ª opção: 5480 (Competência)
+Q0395,publicar,5476,,0.9831,
+Q0396,publicar,5087,,0.9874,
+Q0397,revisar,5170,,0.3672,confiança 0.37 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0398,publicar,5175,,0.9639,
+Q0399,publicar,5087,,0.9873,
+Q0400,revisar,5211,,0.9269,confiança 0.93 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0401,revisar,4703,,0.3777,confiança 0.38 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0402,revisar,6716,,0.5549,confiança 0.55 abaixo de 0.94; 2ª opção: 4684 (Abuso de Autoridade)
+Q0403,revisar,5175,,0.1756,confiança 0.18 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0404,publicar,5116,,0.9692,
+Q0405,revisar,5524,,0.6080,confiança 0.61 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0406,publicar,5087,,0.9921,
+Q0407,publicar,5572,,0.9671,
+Q0408,publicar,5490,,0.9784,
+Q0409,publicar,5211,,0.9784,
+Q0410,publicar,5211,,0.9742,
+Q0411,publicar,5087,,0.9558,
+Q0412,publicar,5087,,0.9897,
+Q0413,publicar,5087,,0.9892,
+Q0414,publicar,4695,,0.9623,
+Q0415,publicar,4695,,0.9522,
+Q0416,revisar,5199,,0.3320,confiança 0.33 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0417,revisar,5199,,0.4724,confiança 0.47 abaixo de 0.94; 2ª opção: 4384 (Teorias Legitimidoras da Pena)
+Q0418,revisar,4704,,0.7857,confiança 0.79 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0419,revisar,4371,,0.6522,confiança 0.65 abaixo de 0.94; 2ª opção: 4385 (Teorias Sociológicas Explicativas da Criminalidade)
+Q0420,revisar,4704,,0.8341,confiança 0.83 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0421,revisar,5498,,0.4794,confiança 0.48 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0422,revisar,5087,,0.3300,confiança 0.33 abaixo de 0.94; 2ª opção: 5116 (Dos Crimes Contra a Fé Pública e de Falsidade Documental)
+Q0423,publicar,4695,,0.9515,
+Q0424,revisar,5466,,0.5996,confiança 0.60 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0425,revisar,5572,,0.8122,confiança 0.81 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0426,revisar,5175,,0.8560,confiança 0.86 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0427,revisar,5466,,0.5566,confiança 0.56 abaixo de 0.94; 2ª opção: 5572 (Sentença Penal)
+Q0428,revisar,5466,,0.8531,confiança 0.85 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0429,revisar,5149,,0.5386,confiança 0.54 abaixo de 0.94; 2ª opção: 5170 (Introdução ao Estudo do Direito Penal)
+Q0430,revisar,4704,,0.5846,confiança 0.58 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0431,revisar,5466,,0.6039,confiança 0.60 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0432,revisar,5466,,0.6525,confiança 0.65 abaixo de 0.94; 2ª opção: 5063 (Ação Penal)
+Q0433,revisar,5071,,0.9376,confiança 0.94 abaixo de 0.94; 2ª opção: 5066 (Concurso de Crimes)
+Q0434,publicar,5498,,0.9782,
+Q0435,revisar,4707,,0.5130,confiança 0.51 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0436,revisar,4704,,0.8074,confiança 0.81 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0437,publicar,5180,,0.9422,
+Q0438,revisar,5116,,0.7851,confiança 0.79 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0439,publicar,5087,,0.9831,
+Q0440,publicar,5498,,0.9702,
+Q0441,revisar,5476,,0.7102,confiança 0.71 abaixo de 0.94; 2ª opção: 5539 (Procedimento Sumaríssimo)
+Q0442,revisar,5466,,0.9222,confiança 0.92 abaixo de 0.94; 2ª opção: 5063 (Ação Penal)
+Q0443,revisar,5211,,0.9017,confiança 0.90 abaixo de 0.94; 2ª opção: 5228 (Teoria do Crime: Ilicitude)
+Q0444,publicar,5543,,0.9776,
+Q0445,revisar,4705,,0.5553,confiança 0.56 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0446,revisar,5517,,0.5547,confiança 0.55 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0447,publicar,5185,,0.9813,
+Q0448,revisar,5572,,0.7915,confiança 0.79 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0449,publicar,5228,,0.9533,
+Q0450,revisar,5560,,0.8419,confiança 0.84 abaixo de 0.94; 2ª opção: 5512 (Parte Geral dos Recursos)
+Q0451,publicar,5498,,0.9794,
+Q0452,publicar,5498,,0.9921,
+Q0453,revisar,4704,,0.8487,confiança 0.85 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0454,revisar,5180,,0.8555,confiança 0.86 abaixo de 0.94; 2ª opção: 5066 (Concurso de Crimes)
+Q0455,revisar,5466,,0.4869,confiança 0.49 abaixo de 0.94; 2ª opção: 5530 (Procedimento Ordinário)
+Q0456,revisar,5170,,0.7946,confiança 0.79 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0457,revisar,5476,,0.9264,confiança 0.93 abaixo de 0.94; 2ª opção: 5572 (Sentença Penal)
+Q0458,revisar,5218,,0.4300,confiança 0.43 abaixo de 0.94; 2ª opção: 5170 (Introdução ao Estudo do Direito Penal)
+Q0459,revisar,4695,,0.9292,confiança 0.93 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0460,publicar,5144,,0.9704,
+Q0461,revisar,5560,,0.8574,confiança 0.86 abaixo de 0.94; 2ª opção: 5512 (Parte Geral dos Recursos)
+Q0462,revisar,5071,,0.6179,confiança 0.62 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0463,publicar,5087,,0.9586,
+Q0464,revisar,5087,,0.6387,confiança 0.64 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0465,revisar,5498,,0.2621,confiança 0.26 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0466,revisar,5218,,0.7977,confiança 0.80 abaixo de 0.94; 2ª opção: 5149 (Dos Crimes Contra a Vida)
+Q0467,revisar,5490,,0.9397,confiança 0.94 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0468,revisar,5157,,0.4083,confiança 0.41 abaixo de 0.94; 2ª opção: 5185 (Prescrição)
+Q0469,revisar,4374,,0.9182,confiança 0.92 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0470,revisar,5199,,0.7557,confiança 0.76 abaixo de 0.94; 2ª opção: 4703 (Lei de Execução Penal)
+Q0471,revisar,5087,,0.5211,confiança 0.52 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0472,revisar,5116,,0.8689,confiança 0.87 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0473,revisar,5498,,0.8662,confiança 0.87 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0474,revisar,4690,,0.6760,confiança 0.68 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0475,publicar,5175,,0.9434,
+Q0476,publicar,5524,,0.9577,
+Q0477,publicar,5466,,0.9426,
+Q0478,publicar,5480,,0.9782,
+Q0479,revisar,5560,,0.5748,confiança 0.57 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0480,revisar,5199,,0.8247,confiança 0.82 abaixo de 0.94; 2ª opção: 5066 (Concurso de Crimes)
+Q0481,revisar,5170,,0.5532,confiança 0.55 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0482,publicar,5505,,0.9596,
+Q0483,publicar,5175,,0.9725,
+Q0484,revisar,6723,,0.2767,confiança 0.28 abaixo de 0.94; 2ª opção: 4702 (Lavagem de Dinheiro)
+Q0485,revisar,5180,,0.7753,confiança 0.78 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0486,revisar,5560,,0.8545,confiança 0.85 abaixo de 0.94; 2ª opção: 5490 (Das Questões e Processos Incidentes)
+Q0487,revisar,5157,,0.9328,confiança 0.93 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0488,publicar,5087,,0.9921,
+Q0489,revisar,5185,,0.6699,confiança 0.67 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0490,publicar,5211,,0.9822,
+Q0491,publicar,5157,,0.9639,
+Q0492,revisar,5157,,0.8323,confiança 0.83 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0493,revisar,5498,,0.8528,confiança 0.85 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0494,revisar,5498,,0.9398,confiança 0.94 abaixo de 0.94; 2ª opção: 5590 (Teoria Geral das Provas)
+Q0495,revisar,5087,,0.7556,confiança 0.76 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0496,revisar,5175,,0.5390,confiança 0.54 abaixo de 0.94; 2ª opção: 5211 (Teoria do Crime: Culpabilidade)
+Q0497,revisar,5560,,0.5555,confiança 0.56 abaixo de 0.94; 2ª opção: 5512 (Parte Geral dos Recursos)
+Q0498,revisar,5128,,0.7627,confiança 0.76 abaixo de 0.94; 2ª opção: 4704 (Lei Maria da Penha)
+Q0499,revisar,5218,,0.9136,confiança 0.91 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0500,publicar,4695,,0.9465,
+Q0501,publicar,4704,,0.9485,
+Q0502,publicar,5087,,0.9893,
+Q0503,revisar,4377,,0.8274,confiança 0.83 abaixo de 0.94; 2ª opção: 4374 (Política Criminal)
+Q0504,revisar,5218,,0.9389,confiança 0.94 abaixo de 0.94; 2ª opção: 5211 (Teoria do Crime: Culpabilidade)
+Q0505,publicar,5087,,0.9886,
+Q0506,revisar,5180,,0.5565,confiança 0.56 abaixo de 0.94; 2ª opção: 5170 (Introdução ao Estudo do Direito Penal)
+Q0507,revisar,5211,,0.7800,confiança 0.78 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0508,revisar,4700,,0.9379,confiança 0.94 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0509,revisar,5498,,0.9311,confiança 0.93 abaixo de 0.94; 2ª opção: 5512 (Parte Geral dos Recursos)
+Q0510,publicar,5590,,0.9741,
+Q0511,revisar,5560,,0.2649,confiança 0.26 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0512,revisar,5480,,0.7841,confiança 0.78 abaixo de 0.94; 2ª opção: 5539 (Procedimento Sumaríssimo)
+Q0513,revisar,4688,,0.6729,confiança 0.67 abaixo de 0.94; 2ª opção: 6717 (Crimes contra o meio ambiente)
+Q0514,revisar,4689,,0.3110,confiança 0.31 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0515,revisar,4704,,0.8208,confiança 0.82 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0516,revisar,4690,,0.4821,confiança 0.48 abaixo de 0.94; 2ª opção: 6723 (Lavagem de Dinheiro)
+Q0517,revisar,5466,,0.7489,confiança 0.75 abaixo de 0.94; 2ª opção: 5120 (Dos Crimes Contra a Honra)
+Q0518,publicar,5087,,0.9479,
+Q0519,publicar,5498,,0.9657,
+Q0520,publicar,5087,,0.9456,
+Q0521,revisar,4384,,0.5132,confiança 0.51 abaixo de 0.94; 2ª opção: 4374 (Política Criminal)
+Q0522,revisar,5524,,0.5007,confiança 0.50 abaixo de 0.94; 2ª opção: 5476 (Ações Autônomas de Impugnação)
+Q0523,revisar,5498,,0.3871,confiança 0.39 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0524,revisar,5185,,0.8548,confiança 0.85 abaixo de 0.94; 2ª opção: 5191 (Punibilidade)
+Q0525,publicar,5199,,0.9683,
+Q0526,revisar,4385,,0.7735,confiança 0.77 abaixo de 0.94; 2ª opção: 4374 (Política Criminal)
+Q0527,publicar,5199,,0.9736,
+Q0528,revisar,5180,,0.7664,confiança 0.77 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0529,publicar,5087,,0.9448,
+Q0530,revisar,5543,,0.8769,confiança 0.88 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0531,revisar,5466,,0.9028,confiança 0.90 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0532,publicar,5157,,0.9478,
+Q0533,revisar,5134,,0.8140,confiança 0.81 abaixo de 0.94; 2ª opção: 5128 (Dos Crimes Contra a Liberdade Pessoal)
+Q0534,revisar,4377,,0.7938,confiança 0.79 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0535,publicar,4704,,0.9625,
+Q0536,publicar,5543,,0.9895,
+Q0537,publicar,5480,,0.9487,
+Q0538,revisar,4703,,0.1944,confiança 0.19 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0539,revisar,5157,,0.8060,confiança 0.81 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0540,revisar,5175,,0.6006,confiança 0.60 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0541,publicar,5087,,0.9810,
+Q0542,revisar,5517,,0.9266,confiança 0.93 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0543,revisar,5560,,0.7630,confiança 0.76 abaixo de 0.94; 2ª opção: 5509 (Nulidades)
+Q0544,revisar,5560,,0.3843,confiança 0.38 abaixo de 0.94; 2ª opção: 5539 (Procedimento Sumaríssimo)
+Q0545,revisar,4374,,0.5779,confiança 0.58 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0546,publicar,5087,,0.9852,
+Q0547,revisar,5185,,0.9369,confiança 0.94 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0548,revisar,5560,,0.9296,confiança 0.93 abaixo de 0.94; 2ª opção: 5512 (Parte Geral dos Recursos)
+Q0549,revisar,4703,,0.6808,confiança 0.68 abaixo de 0.94; 2ª opção: 6734 (Lei de Execução Penal)
+Q0550,revisar,5157,,0.8928,confiança 0.89 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0551,publicar,5466,,0.9517,
+Q0552,revisar,5524,,0.2110,confiança 0.21 abaixo de 0.94; 2ª opção: 5509 (Nulidades)
+Q0553,revisar,5530,,0.6004,confiança 0.60 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0554,revisar,5128,,0.9285,confiança 0.93 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0555,revisar,4703,,0.4176,confiança 0.42 abaixo de 0.94; 2ª opção: 6734 (Lei de Execução Penal)
+Q0556,revisar,4371,,0.8151,confiança 0.82 abaixo de 0.94; 2ª opção: 4385 (Teorias Sociológicas Explicativas da Criminalidade)
+Q0557,revisar,5498,,0.5409,confiança 0.54 abaixo de 0.94; 2ª opção: 5539 (Procedimento Sumaríssimo)
+Q0558,revisar,5524,,0.6028,confiança 0.60 abaixo de 0.94; 2ª opção: 5580 (Sistemas e Princípios Processuais Penais)
+Q0559,publicar,5087,,0.9885,
+Q0560,revisar,4697,,0.2454,confiança 0.25 abaixo de 0.94; 2ª opção: 4693 (Crimes Hediondos)
+Q0561,publicar,5116,,0.9401,
+Q0562,publicar,5087,,0.9772,
+Q0563,revisar,4385,,0.8287,confiança 0.83 abaixo de 0.94; 2ª opção: 4371 (Etapas Evolutivas e Escolas Criminológicas)
+Q0564,publicar,4385,,0.9775,
+Q0565,revisar,5466,,0.4784,confiança 0.48 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0566,publicar,5087,,0.9610,
+Q0567,revisar,5199,,0.9057,confiança 0.91 abaixo de 0.94; 2ª opção: 4703 (Lei de Execução Penal)
+Q0568,revisar,5218,,0.9113,confiança 0.91 abaixo de 0.94; 2ª opção: 5180 (Lei Penal no Tempo e no Espaço)
+Q0569,revisar,5199,,0.2707,confiança 0.27 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0570,revisar,5560,,0.3368,confiança 0.34 abaixo de 0.94; 2ª opção: 5476 (Ações Autônomas de Impugnação)
+Q0571,revisar,5543,,0.6552,confiança 0.66 abaixo de 0.94; 2ª opção: 5560 (Recursos em Espécies)
+Q0572,publicar,4697,,0.9567,
+Q0573,revisar,5157,,0.8637,confiança 0.86 abaixo de 0.94; 2ª opção: 5175 (Iter Criminis)
+Q0574,revisar,5157,,0.0939,confiança 0.09 abaixo de 0.94; 2ª opção: 5191 (Punibilidade)
+Q0575,revisar,5490,,0.6333,confiança 0.63 abaixo de 0.94; 2ª opção: 4702 (Lavagem de Dinheiro)
+Q0576,revisar,5087,,0.9230,confiança 0.92 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0577,revisar,4704,,0.8271,confiança 0.83 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0578,revisar,6723,,0.5026,confiança 0.50 abaixo de 0.94; 2ª opção: 4702 (Lavagem de Dinheiro)
+Q0579,revisar,5543,,0.7931,confiança 0.79 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0580,revisar,4690,,0.5242,confiança 0.52 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0581,revisar,5466,,0.5822,confiança 0.58 abaixo de 0.94; 2ª opção: 5539 (Procedimento Sumaríssimo)
+Q0582,revisar,5087,,0.1489,confiança 0.15 abaixo de 0.94; 2ª opção: 4693 (Crimes Hediondos)
+Q0583,revisar,5185,,0.8389,confiança 0.84 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0584,revisar,5185,,0.8687,confiança 0.87 abaixo de 0.94; 2ª opção: 5191 (Punibilidade)
+Q0585,revisar,5175,,0.8335,confiança 0.83 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0586,revisar,5517,,0.9327,confiança 0.93 abaixo de 0.94; 2ª opção: 5584 (Teoria Geral das Prisões)
+Q0587,revisar,5185,,0.6585,confiança 0.66 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0588,publicar,4385,,0.9815,
+Q0589,revisar,5199,,0.6940,confiança 0.69 abaixo de 0.94; 2ª opção: 5572 (Sentença Penal)
+Q0590,publicar,5228,,0.9769,
+Q0591,revisar,5560,,0.7923,confiança 0.79 abaixo de 0.94; 2ª opção: 5512 (Parte Geral dos Recursos)
+Q0592,revisar,5087,,0.8730,confiança 0.87 abaixo de 0.94; 2ª opção: 5079 (Dos Crimes Contra a Administração Judicial)
+Q0593,revisar,5157,,0.6175,confiança 0.62 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0594,revisar,5087,,0.8573,confiança 0.86 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0595,publicar,5498,,0.9862,
+Q0596,revisar,5180,,0.8302,confiança 0.83 abaixo de 0.94; 2ª opção: 5218 (Teoria do Crime: Fato Típico)
+Q0597,revisar,5498,,0.2184,confiança 0.22 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0598,revisar,4371,,0.7652,confiança 0.77 abaixo de 0.94; 2ª opção: 4385 (Teorias Sociológicas Explicativas da Criminalidade)
+Q0599,revisar,5543,,0.2519,confiança 0.25 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0600,revisar,5185,,0.5325,confiança 0.53 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0601,publicar,5539,,0.9514,
+Q0602,revisar,5466,,0.5787,confiança 0.58 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0603,publicar,5087,,0.9921,
+Q0604,publicar,5087,,0.9863,
+Q0605,revisar,5590,,0.5147,confiança 0.51 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0606,revisar,5199,,0.5652,confiança 0.57 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0607,revisar,4368,,0.6079,confiança 0.61 abaixo de 0.94; 2ª opção: 4385 (Teorias Sociológicas Explicativas da Criminalidade)
+Q0608,publicar,5180,,0.9622,
+Q0609,revisar,4695,,0.8313,confiança 0.83 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0610,revisar,4700,,0.8622,confiança 0.86 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0611,publicar,5116,,0.9663,
+Q0612,revisar,5087,,0.6750,confiança 0.68 abaixo de 0.94; 2ª opção: 5466 (Ação Penal)
+Q0613,publicar,4689,,0.9412,
+Q0614,revisar,5087,,0.2374,confiança 0.24 abaixo de 0.94; 2ª opção: 4698 (Genocídio)
+Q0615,revisar,5466,,0.5462,confiança 0.55 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0616,revisar,5218,,0.6390,confiança 0.64 abaixo de 0.94; 2ª opção: 5180 (Lei Penal no Tempo e no Espaço)
+Q0617,revisar,5466,,0.4450,confiança 0.45 abaixo de 0.94; 2ª opção: 5498 (Inquérito Policial)
+Q0618,revisar,5218,,0.8729,confiança 0.87 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0619,revisar,5539,,0.2172,confiança 0.22 abaixo de 0.94; 2ª opção: 4701 (Juizado Especial Criminal)
+Q0620,revisar,5147,,0.9054,confiança 0.91 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0621,revisar,5543,,0.7592,confiança 0.76 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0622,publicar,5180,,0.9612,
+Q0623,publicar,5543,,0.9881,
+Q0624,revisar,4704,,0.8167,confiança 0.82 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0625,publicar,5087,,0.9906,
+Q0626,revisar,5560,,0.3152,confiança 0.32 abaixo de 0.94; 2ª opção: 5490 (Das Questões e Processos Incidentes)
+Q0627,publicar,5125,,0.9545,
+Q0628,revisar,5498,,0.8258,confiança 0.83 abaixo de 0.94; 2ª opção: 5543 (Provas em Espécies)
+Q0629,publicar,4371,,0.9440,
+Q0630,revisar,5079,,0.8923,confiança 0.89 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0631,publicar,5087,,0.9741,
+Q0632,publicar,5087,,0.9921,
+Q0633,revisar,5157,,0.5628,confiança 0.56 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0634,publicar,5487,,0.9665,
+Q0635,revisar,5211,,0.7818,confiança 0.78 abaixo de 0.94; 2ª opção: 5199 (Teoria da Pena)
+Q0636,revisar,4695,,0.9282,confiança 0.93 abaixo de 0.94; 2ª opção: 5087 (Dos Crimes Contra a Administração Pública)
+Q0637,publicar,5087,,0.9921,
+Q0638,publicar,5087,,0.9889,
+Q0639,publicar,4707,,0.9667,
+Q0640,publicar,5218,,0.9845,
+Q0641,publicar,5087,,0.9900,
+Q0642,revisar,4704,,0.8096,confiança 0.81 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0643,revisar,4377,,0.8073,confiança 0.81 abaixo de 0.94; 2ª opção: 4368 (Criminologia no Estado Democrático de Direito)
+Q0644,revisar,5087,,0.8779,confiança 0.88 abaixo de 0.94; 2ª opção: 5157 (Dos Crimes Contra o Patrimônio)
+Q0645,publicar,5218,,0.9496,
+Q0646,revisar,4371,,0.4015,confiança 0.40 abaixo de 0.94; 2ª opção: 4374 (Política Criminal)
+Q0647,publicar,5487,,0.9465,
+Q0648,revisar,5543,,0.1497,confiança 0.15 abaixo de 0.94; 2ª opção: 4705 (Organizações Criminosas)
+Q0649,revisar,5199,,0.7960,confiança 0.80 abaixo de 0.94; 2ª opção: 4703 (Lei de Execução Penal)
+Q0650,revisar,5199,,0.5918,confiança 0.59 abaixo de 0.94; 2ª opção: 5066 (Concurso de Crimes)
+Q0651,revisar,4704,,0.8042,confiança 0.80 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0652,revisar,5498,,0.3573,confiança 0.36 abaixo de 0.94; 2ª opção: 4701 (Juizado Especial Criminal)
+Q0653,revisar,4704,,0.6101,confiança 0.61 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0654,revisar,5583,,0.5248,confiança 0.52 abaixo de 0.94; 2ª opção: 5524 (Procedimento do Tribunal do Júri)
+Q0655,revisar,4385,,0.5731,confiança 0.57 abaixo de 0.94; 2ª opção: 4371 (Etapas Evolutivas e Escolas Criminológicas)
+Q0656,revisar,4704,,0.4786,confiança 0.48 abaixo de 0.94; 2ª opção: 6724 (Lei Maria da Penha)
+Q0657,revisar,6716,,0.6047,confiança 0.60 abaixo de 0.94; 2ª opção: 4684 (Abuso de Autoridade)
+Q0658,revisar,4371,,0.2009,confiança 0.20 abaixo de 0.94; 2ª opção: 4688 (Crimes contra o meio ambiente)
+Q0659,revisar,6723,,0.8215,confiança 0.82 abaixo de 0.94; 2ª opção: 4702 (Lavagem de Dinheiro)

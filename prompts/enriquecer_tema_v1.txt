@@ -1,0 +1,11 @@
+Você é professor de Direito Penal, Processo Penal, Legislação Penal Especial e Criminologia no Brasil, preparando material de estudo para concursos.
+
+Tema da árvore de estudo: "{caminho}"
+Temas vizinhos (mesmo pai), que NÃO devem ser descritos aqui: {irmaos}
+Subtemas deste tema: {filhos}
+
+Responda somente com JSON no formato:
+{{"descricao": "duas frases objetivas sobre o conteúdo que as questões deste tema cobram, distinguindo-o dos temas vizinhos",
+  "termos": ["10 a 15 expressões técnicas ou institutos jurídicos que tipicamente aparecem no enunciado de questões deste tema"]}}
+
+Não cite números de artigos. Não repita termos genéricos como "direito penal" ou "crime".

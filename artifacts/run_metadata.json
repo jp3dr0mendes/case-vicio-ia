@@ -1,0 +1,198 @@
+{
+  "versao_codigo": "2.0.0",
+  "versao_politica": "politica_v2.0",
+  "chama_modelo_de_linguagem": false,
+  "modelo_embeddings_em_cache": "bge-m3",
+  "hashes_sha256": {
+    "LEIA-ME.md": "ba8cda8a3b53cfe12f82558e7645f0b0f6d40f71796ba21f22d120ff641c7ab7",
+    "entrega_modelo.csv": "6778f7ffd32e467321a590829bb05796f967b5e703938c0dc2d4c2a43ac12c76",
+    "folha_verdade.csv": "c1412ce8d336ae248a2f0e46d8e34cbc07dd33c78af9ce6bbe1337c516ee8e3b",
+    "questoes.jsonl": "318f1fea970633a4d84eb5a4dd071b2ae76ad3e49288a073ab381f61a09da3f3",
+    "temas.csv": "9c6e98a6cd568816671c0fa14e2449b152cee10e20cb1327b3b097c1c5ce4cbc",
+    "regras/artigos.json": "0eb6954cb50f3896ffa3280037ba70b3ecc28cc69d4d2dc80b51509c69ef3d1b",
+    "regras/leis.json": "ed258caf773171dd9b828bd0722d86cfabc4f6742d017664e6aff49d249fe95f",
+    "temas_enriquecidos.jsonl": "56d285839073b71a6ff5f7e7fc4b86474b7b30af7160fc7619014388a22ba330",
+    "embeddings/questoes.npz": "71e184390175e1a00e4040371bd9ad689af8afa09b065b92237885054d381209",
+    "embeddings/temas.npz": "bb147ff6838810b86711ff6bf7a3836f3aa3ffd6ef11508ad72277db6dd5e3e6"
+  },
+  "config": {
+    "l2": 1.0,
+    "threshold": null,
+    "target_precision": 0.97,
+    "min_threshold": 0.9,
+    "cv_folds": 10,
+    "cv_repeats": 10,
+    "feature_mask": null
+  },
+  "features": [
+    "emb",
+    "emb_gap",
+    "tfidf",
+    "tfidf_gap",
+    "lei",
+    "artigo",
+    "origem",
+    "origem_gap",
+    "disciplina",
+    "clone",
+    "volume",
+    "volume_desconhecido",
+    "knn",
+    "knn_gap",
+    "origem_rotulada",
+    "prior"
+  ],
+  "pesos_ranqueador": {
+    "emb": 1.1029955240357698,
+    "emb_gap": 1.1209457308129418,
+    "tfidf": 0.7595394925289454,
+    "tfidf_gap": 0.26308195496944337,
+    "lei": 0.4097994006322483,
+    "artigo": 0.05578560070897736,
+    "origem": 0.11072165727379288,
+    "origem_gap": 0.04658529235021476,
+    "disciplina": 1.3930505560158644,
+    "clone": -0.4404433330934443,
+    "volume": 0.002156510587546426,
+    "volume_desconhecido": -0.4404433330934443,
+    "knn": -0.43866905751646573,
+    "knn_gap": -0.43027445490262634,
+    "origem_rotulada": 0.08562332228828354,
+    "prior": 1.6687824288830184
+  },
+  "calibrador": {
+    "entradas": [
+      "logit_p_top",
+      "logit_margem",
+      "concordancia"
+    ],
+    "coef": [
+      -0.18073656625305906,
+      0.32181959520475134,
+      1.0157449042207825
+    ],
+    "intercepto": -0.5329754898745038
+  },
+  "limiar_publicacao": 0.94,
+  "questoes": 659,
+  "sem_embedding": 0,
+  "decisoes_todas": {
+    "publicar": 227,
+    "revisar": 424,
+    "fora": 8
+  },
+  "decisoes_fora_da_folha": {
+    "publicar": 135,
+    "revisar": 424,
+    "fora": 0
+  },
+  "cobertura_fora_da_folha": 0.24150268336314848,
+  "precisao_esperada_pelo_calibrador": 0.9687592592592592,
+  "validacao_cruzada": {
+    "top1_acerto": 0.702,
+    "publicadas_oof_total": 218,
+    "acertos_oof_total": 213,
+    "precisao_oof": 0.9770642201834863,
+    "precisao_oof_wilson95_por_item": [
+      0.7820151050048196,
+      0.9919307806988523
+    ],
+    "cobertura_oof": 0.218,
+    "brier_calibrado": 0.14736909930802278,
+    "confianca_media_publicadas": 0.9712077339833716,
+    "por_repeticao": [
+      {
+        "publicadas": 20,
+        "acertos": 20,
+        "cobertura": 0.2,
+        "precisao": 1.0,
+        "top1": 0.71
+      },
+      {
+        "publicadas": 23,
+        "acertos": 22,
+        "cobertura": 0.23,
+        "precisao": 0.9565217391304348,
+        "top1": 0.7
+      },
+      {
+        "publicadas": 23,
+        "acertos": 23,
+        "cobertura": 0.23,
+        "precisao": 1.0,
+        "top1": 0.72
+      },
+      {
+        "publicadas": 24,
+        "acertos": 23,
+        "cobertura": 0.24,
+        "precisao": 0.9583333333333334,
+        "top1": 0.68
+      },
+      {
+        "publicadas": 24,
+        "acertos": 23,
+        "cobertura": 0.24,
+        "precisao": 0.9583333333333334,
+        "top1": 0.65
+      },
+      {
+        "publicadas": 22,
+        "acertos": 21,
+        "cobertura": 0.22,
+        "precisao": 0.9545454545454546,
+        "top1": 0.73
+      },
+      {
+        "publicadas": 19,
+        "acertos": 19,
+        "cobertura": 0.19,
+        "precisao": 1.0,
+        "top1": 0.71
+      },
+      {
+        "publicadas": 21,
+        "acertos": 21,
+        "cobertura": 0.21,
+        "precisao": 1.0,
+        "top1": 0.71
+      },
+      {
+        "publicadas": 20,
+        "acertos": 20,
+        "cobertura": 0.2,
+        "precisao": 1.0,
+        "top1": 0.68
+      },
+      {
+        "publicadas": 22,
+        "acertos": 21,
+        "cobertura": 0.22,
+        "precisao": 0.9545454545454546,
+        "top1": 0.73
+      }
+    ]
+  },
+  "publicadas_por_lote": {
+    "banco_Q0001_Q0359": 41,
+    "importacao_nova": 94
+  },
+  "previsao": {
+    "precisao_oof_folha": 0.9770642201834863,
+    "publicacoes_oof_por_repeticao": 21.8,
+    "precisao_esperada_calibrador": 0.9687592592592592,
+    "precisao_prevista": 0.9687592592592592,
+    "precisao_intervalo_80": [
+      0.9407407407407408,
+      1.0
+    ],
+    "cobertura_prevista": 0.24150268336314848,
+    "cobertura_intervalo": [
+      0.24150268336314848,
+      0.24150268336314848
+    ],
+    "n_publicadas_avaliadas": 135,
+    "n_avaliadas": 559
+  },
+  "segundos": 6.5
+}

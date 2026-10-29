@@ -1,0 +1,74 @@
+# Classificação (sem modelo de linguagem):
+#   docker compose run --rm app
+# Com registro da execução no PostgreSQL:
+#   docker compose --profile db up -d db && docker compose --profile db run --rm app-db
+# Etapa offline (embeddings de questões novas) com Ollama em container:
+#   docker compose --profile offline-llm up -d ollama
+#   docker compose exec ollama ollama pull bge-m3
+#   docker compose --profile offline-llm run --rm embed
+services:
+  app:
+    build: .
+    image: vicio-classifier:2.0
+    volumes:
+      - ./saida:/app/saida
+    command: ["--artifacts-dir", "/app/saida/artifacts", "classify", "--out", "/app/saida/publicacao.csv"]
+    entrypoint: ["sh", "-c", "mkdir -p /app/saida/artifacts && cp -r /app/artifacts/. /app/saida/artifacts/ && exec python -m vicio_classifier \"$$@\"", "--"]
+    network_mode: none   # prova operacional: a classificação roda sem rede, logo sem modelo
+
+  db:
+    image: postgres:16-alpine
+    profiles: ["db"]
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-vicio}
+      POSTGRES_USER: ${POSTGRES_USER:-vicio}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-}  # vazio = o Postgres recusa subir (defina no .env)
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks: [interna]
+
+  app-db:
+    image: vicio-classifier:2.0
+    build: .
+    profiles: ["db"]
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-vicio}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-vicio}
+    volumes:
+      - ./saida:/app/saida
+    entrypoint: ["sh", "-c", "mkdir -p /app/saida/artifacts && cp -r /app/artifacts/. /app/saida/artifacts/ && exec python -m vicio_classifier \"$$@\"", "--"]
+    command: ["--artifacts-dir", "/app/saida/artifacts", "classify", "--out", "/app/saida/publicacao.csv", "--db"]
+    depends_on:
+      db:
+        condition: service_healthy
+    networks: [interna]
+
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["offline-llm"]
+    volumes:
+      - ollama_data:/root/.ollama
+    networks: [interna]
+
+  embed:
+    image: vicio-classifier:2.0
+    build: .
+    profiles: ["offline-llm"]
+    environment:
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://ollama:11434}
+    volumes:
+      - ./saida:/app/saida
+    entrypoint: ["python", "-m", "vicio_classifier.offline.embed"]
+    command: ["--what", "questoes", "--artifacts-dir", "/app/saida/artifacts"]
+    networks: [interna]
+
+volumes:
+  postgres_data:
+  ollama_data:
+
+networks:
+  interna:

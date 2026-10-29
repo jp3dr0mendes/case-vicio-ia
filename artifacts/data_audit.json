@@ -1,0 +1,169 @@
+{
+  "arquivos_sha256": {
+    "LEIA-ME.md": "ba8cda8a3b53cfe12f82558e7645f0b0f6d40f71796ba21f22d120ff641c7ab7",
+    "entrega_modelo.csv": "6778f7ffd32e467321a590829bb05796f967b5e703938c0dc2d4c2a43ac12c76",
+    "folha_verdade.csv": "c1412ce8d336ae248a2f0e46d8e34cbc07dd33c78af9ce6bbe1337c516ee8e3b",
+    "questoes.jsonl": "318f1fea970633a4d84eb5a4dd071b2ae76ad3e49288a073ab381f61a09da3f3",
+    "temas.csv": "9c6e98a6cd568816671c0fa14e2449b152cee10e20cb1327b3b097c1c5ce4cbc"
+  },
+  "questoes": {
+    "total": 659,
+    "ids_unicos": 659,
+    "faixa_ids": [
+      "Q0001",
+      "Q0659"
+    ],
+    "banco_Q0001_Q0359": 359,
+    "importacao_nova_Q0360_Q0659": 300,
+    "sem_comando": 401,
+    "sem_assunto_origem": 19,
+    "sem_disciplina_origem": 1,
+    "sem_alternativas": 0,
+    "html_residual_apos_limpeza": 0,
+    "assuntos_origem_distintos": 234,
+    "disciplina_origem": {
+      "Direito Penal": 279,
+      "Processo Penal": 246,
+      "Criminologia": 56,
+      "Direito Penal - Legislação Especial": 32,
+      "Penal": 27,
+      "Direito Penal Militar": 5,
+      "Direito Processual Penal Militar": 5,
+      "Direito Constitucional": 2,
+      "Direito Civil - Legislação Especial": 2,
+      "Disciplina Unificada": 1,
+      "(vazio)": 1,
+      "Direito Tributário": 1,
+      "Direito Processual Penal": 1,
+      "Direito Ambiental": 1
+    },
+    "disciplina_origem_fora_das_4_areas": 18
+  },
+  "temas": {
+    "total": 377,
+    "por_nivel": {
+      "0": 4,
+      "1": 111,
+      "2": 262
+    },
+    "por_status": {
+      "active": 375,
+      "inactive": 2
+    },
+    "inativos": [
+      {
+        "tema_id": 5078,
+        "caminho": "Penal > Direito penal econômico"
+      },
+      {
+        "tema_id": 5234,
+        "caminho": "Penal > Tratados e convenções em matéria criminal"
+      }
+    ],
+    "selecionaveis": 371,
+    "selecionaveis_nivel_1": 109,
+    "sem_descricao_clones": [
+      6716,
+      6717,
+      6718,
+      6720,
+      6719,
+      6721,
+      6722,
+      6723,
+      6724,
+      6725,
+      6726,
+      6727,
+      6728,
+      6732,
+      6733,
+      6734,
+      6735,
+      6736,
+      6737,
+      6738
+    ],
+    "titulos_duplicados_ou_partes": {
+      "abuso de autoridade": [
+        4684,
+        6716
+      ],
+      "crimes contra o meio ambiente": [
+        4688,
+        6717
+      ],
+      "lavagem de dinheiro": [
+        4702,
+        6723
+      ],
+      "lei maria da penha": [
+        4704,
+        6724
+      ],
+      "lei de execucao penal": [
+        4703,
+        6734
+      ],
+      "organizacoes criminosas": [
+        4705,
+        6725
+      ],
+      "trafico de drogas": [
+        4708,
+        6728
+      ],
+      "acao penal": [
+        5063,
+        5466
+      ],
+      "dos crimes contra a administracao publica": [
+        5087,
+        6718,
+        6719
+      ],
+      "dos crimes contra o patrimonio": [
+        5157,
+        6720,
+        6721
+      ],
+      "teoria da pena": [
+        5199,
+        6726,
+        6727
+      ],
+      "competencia": [
+        5480,
+        6732,
+        6733
+      ],
+      "sentenca penal": [
+        5572,
+        6737,
+        6738
+      ]
+    },
+    "arvore_sem_ciclos_e_pais_validos": true
+  },
+  "folha_verdade": {
+    "total": 100,
+    "fora_da_taxonomia": 8,
+    "com_extras": 39,
+    "central_nivel": {
+      "1": 53,
+      "2": 39
+    },
+    "central_por_disciplina": {
+      "Processo Penal": 30,
+      "Penal": 40,
+      "Direito Penal - Legislação Especial": 12,
+      "Criminologia": 10
+    },
+    "temas_distintos_central": 61,
+    "temas_nivel1_distintos": 41,
+    "ids_ou_temas_invalidos": [],
+    "usa_clones": [
+      6734
+    ]
+  }
+}

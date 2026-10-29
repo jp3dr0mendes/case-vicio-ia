@@ -1,0 +1,30 @@
+precisao_prevista: 0.97
+precisao_intervalo: 0.94-1.00
+cobertura_prevista: 0.24
+cobertura_intervalo: 0.24-0.24
+
+Como cheguei nesses números (gerado por `python -m vicio_classifier classify`; detalhes em artifacts/run_metadata.json)
+
+Cobertura. É uma contagem das minhas próprias decisões: publiquei 135 das 559 questões fora da
+folha-verdade (24.2%). Não há incerteza sobre ela; por isso o intervalo é um ponto.
+
+Precisão. A única evidência rotulada são os 100 exemplos da folha-verdade. Rodei validação cruzada repetida
+(10 partes x 10 repetições): em cada rodada o sistema é treinado sem as questões testadas,
+e as questões testadas recebem tema e confiança como se fossem novas. O calibrador (regressão logística sobre
+probabilidade do topo, margem para o 2º tema e concordância entre sinais) e o limiar de publicação
+(0.940) foram escolhidos nessas predições fora da amostra.
+- Nessas predições, o sistema publicaria 21.8 das 100 questões por rodada, com precisão de
+  97.7% (inclui as questões "fora" da folha, que contam como erro se publicadas).
+- A confiança média que o calibrador atribui às 135 questões publicadas é 96.9%.
+A previsão pontual é o menor dos dois números. O intervalo (80%) simula duas fontes de incerteza: bootstrap das
+questões da folha (só ~22 publicações por rodada sustentam a estimativa) e o sorteio binomial das
+135 publicações reais.
+
+Limitações que pesam contra a previsão:
+1. A folha-verdade só tem questões Q0001-Q0359 (banco antigo). As Q0360-Q0659 (importação nova) vêm sem comando,
+   com assunto de origem em outro formato e sem a disciplina "Legislação Especial". Elas recebem
+   94 das publicações; a calibração não foi testada nesse lote.
+2. 8% da folha é "fora da taxonomia" e o sistema não sabe reconhecer esses casos com 8 exemplos; quando um deles
+   parece com um tema, ele pode ser publicado e conta como erro. Esse é o principal tipo de erro com confiança alta.
+3. Com ~22 publicações por rodada, um único erro a mais muda a precisão estimada em vários pontos.
+Isto é uma previsão, não uma medição: a precisão real só é conhecida com o gabarito da equipe.
