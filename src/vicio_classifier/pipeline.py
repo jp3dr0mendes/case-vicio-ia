@@ -66,12 +66,12 @@ def _load_npz(path: Path) -> tuple[dict[str, np.ndarray], dict[str, str], str]:
     return dict(zip(ids, vecs)), dict(zip(ids, [str(h) for h in z["hashes"]])), str(z["model"])
 
 
-def load_context(data_dir: Path, artifacts_dir: Path) -> Context:
+def load_context(data_dir: Path, artifacts_dir: Path, use_enrichment: bool = True) -> Context:
     questions = load_questions(data_dir / "questoes.jsonl")
     tax = Taxonomy(load_temas(data_dir / "temas.csv"))
     folha = load_folha(data_dir / "folha_verdade.csv")
     rules = LegalRules(artifacts_dir / "regras")
-    profiles = tema_profiles(tax, artifacts_dir)
+    profiles = tema_profiles(tax, artifacts_dir, use_enrichment)
 
     q_emb, q_hash, model = _load_npz(artifacts_dir / "embeddings" / "questoes.npz")
     # Só usa o vetor em cache se o texto da questão não mudou desde que foi gerado.
@@ -79,7 +79,8 @@ def load_context(data_dir: Path, artifacts_dir: Path) -> Context:
         h = hashlib.sha256(q.text.encode("utf-8")).hexdigest()
         if q.id in q_hash and q_hash[q.id] != h:
             q_emb.pop(q.id, None)
-    t_raw, t_hash, _ = _load_npz(artifacts_dir / "embeddings" / "temas.npz")
+    temas_npz = "temas.npz" if use_enrichment else "temas_sem_enriquecimento.npz"
+    t_raw, t_hash, _ = _load_npz(artifacts_dir / "embeddings" / temas_npz)
     t_emb = {}
     for k, v in t_raw.items():
         tid = int(k)
@@ -180,6 +181,43 @@ def choose_threshold(conf: np.ndarray, correct: np.ndarray, cfg: Config) -> floa
             break
         best = t
     return float(best)
+
+
+def nested_evaluation(oof: list[dict], cfg: Config, seeds: int = 20, folds: int = 10) -> dict:
+    """Avaliação aninhada da regra de decisão inteira (calibrador + escolha do limiar).
+
+    Calibrador e limiar são ajustados nas predições fora da amostra de 90% das questões da
+    folha e aplicados nos 10% restantes, que eles não viram. Sem isso, a precisão medida nas
+    mesmas predições usadas para escolher o limiar sai otimista por construção.
+    """
+    ids = sorted({r["id"] for r in oof})
+    Z = np.array([r["z"] for r in oof])
+    Y = np.array([r["acerto"] for r in oof])
+    I = np.array([r["id"] for r in oof])
+    pubs: dict[str, int] = {i: 0 for i in ids}
+    hits: dict[str, int] = {i: 0 for i in ids}
+    seen: dict[str, int] = {i: 0 for i in ids}
+    thresholds = []
+    for seed in range(seeds):
+        perm = np.random.default_rng(SEED + seed).permutation(ids)
+        for fold in np.array_split(perm, folds):
+            te = np.isin(I, fold)
+            cal = Calibrator.fit(Z[~te], Y[~te])
+            t = choose_threshold(cal(Z[~te]), Y[~te], cfg)
+            thresholds.append(t)
+            pub = cal(Z[te]) >= t
+            for i, p, y in zip(I[te], pub, Y[te]):
+                seen[i] += 1
+                pubs[i] += int(p)
+                hits[i] += int(p and y)
+    n_pub, n_hit, n_seen = sum(pubs.values()), sum(hits.values()), sum(seen.values())
+    return {
+        "precisao": n_hit / n_pub if n_pub else None,
+        "cobertura": n_pub / n_seen,
+        "limiar_mediano": float(np.median(thresholds)),
+        "erros_por_questao": {i: pubs[i] - hits[i] for i in ids if pubs[i] > hits[i]},
+        "por_questao": {i: [pubs[i], hits[i], seen[i]] for i in ids},
+    }
 
 
 def summarize_cv(oof: list[dict], cal: Calibrator, threshold: float) -> dict:
@@ -296,8 +334,9 @@ def run(data_dir: Path, artifacts_dir: Path, out_csv: Path, cfg: Config | None =
             "importacao_nova": sum(r["id"] > "Q0359" for r in pub_eval),
         },
     }
-    conf_oof = cal(z_oof)
-    meta["previsao"] = forecast(oof, conf_oof, threshold, counts_eval["publicar"], len(eval_rows), expected_prec)
+    nested = nested_evaluation(oof, cfg)
+    meta["avaliacao_aninhada"] = {k: v for k, v in nested.items() if k != "por_questao"}
+    meta["previsao"] = forecast(nested, counts_eval["publicar"], len(eval_rows), expected_prec)
     meta["segundos"] = round(time.time() - t0, 1)
     artifacts_dir.mkdir(parents=True, exist_ok=True)
     (artifacts_dir / "run_metadata.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")

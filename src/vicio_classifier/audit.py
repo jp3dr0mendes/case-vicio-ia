@@ -46,8 +46,9 @@ def audit(data_dir: Path) -> dict:
             "disciplina_origem": dict(disc.most_common()),
             "disciplina_origem_fora_das_4_areas": sum(
                 v for k, v in disc.items()
-                if normalize(k) not in {"penal", "direito penal", "processo penal", "criminologia",
-                                        "direito penal - legislacao especial", "direito processual penal"}),
+                if k != "(vazio)"
+                and normalize(k) not in {"penal", "direito penal", "processo penal", "criminologia",
+                                         "direito penal - legislacao especial", "direito processual penal"}),
         },
         "temas": {
             "total": len(temas),

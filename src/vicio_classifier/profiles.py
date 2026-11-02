@@ -26,9 +26,12 @@ def load_enrichment(artifacts_dir: Path) -> dict[int, dict]:
     return out
 
 
-def tema_profiles(tax: Taxonomy, artifacts_dir: Path) -> dict[int, str]:
-    """Perfil textual de cada tema selecionável: caminho + subtemas + descrição/termos enriquecidos."""
-    enr = load_enrichment(artifacts_dir)
+def tema_profiles(tax: Taxonomy, artifacts_dir: Path, use_enrichment: bool = True) -> dict[int, str]:
+    """Perfil textual de cada tema selecionável: caminho + subtemas + descrição/termos enriquecidos.
+
+    use_enrichment=False gera o perfil só com o que vem em temas.csv (usado na ablação).
+    """
+    enr = load_enrichment(artifacts_dir) if use_enrichment else {}
     out = {}
     for tid in sorted(tax.selectable_ids):
         node = tax.nodes[tid]

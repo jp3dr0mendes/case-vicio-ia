@@ -10,8 +10,8 @@ está versionado como dado em `artifacts/`.
 |---|---|
 | Classificação das 659 questões | [`publicacao.csv`](publicacao.csv) |
 | Previsão de precisão e cobertura | [`previsao.txt`](previsao.txt) |
-| Relatório (até 4 páginas) | [`relatorio.md`](relatorio.md) |
-| Memo para o professor (1 página) | [`memo_professor.md`](memo_professor.md) |
+| Relatório (4 páginas em A4) | [`relatorio.md`](relatorio.md) (versão em PDF: [`relatorio.pdf`](relatorio.pdf)) |
+| Memo para o professor (1 página) | [`memo_professor.md`](memo_professor.md) (versão em PDF: [`memo_professor.pdf`](memo_professor.pdf)) |
 | Enunciado e anexos originais | [`case-ia-classificacao-de-topicos.pdf`](case-ia-classificacao-de-topicos.pdf), [`anexos-case-ia.zip`](anexos-case-ia.zip) (cópia extraída em `data/anexos/`) |
 
 ## Como rodar
@@ -33,13 +33,14 @@ Outros comandos:
 PYTHONPATH=src python -m vicio_classifier audit                        # auditoria dos anexos -> artifacts/data_audit.json
 PYTHONPATH=src python -m vicio_classifier validate publicacao.csv      # confere o contrato do LEIA-ME
 PYTHONPATH=src pytest -q                                               # testes (inclui classificação com a rede bloqueada)
-PYTHONPATH=src python scripts/experimentos.py 3 > artifacts/experimentos.json   # ablações do relatório
-PYTHONPATH=src python scripts/estresse_origem.py                       # estresse: origem indisponível
+PYTHONPATH=src python scripts/experimentos.py 1 3 > artifacts/experimentos.json # ablações do relatório (~1 min)
+PYTHONPATH=src python scripts/estresse_origem.py > artifacts/estresse_origem.json  # estresse: sem o assunto de origem
 ```
 
 Com Docker:
 
 ```bash
+mkdir -p saida                         # no Linux, crie antes para a pasta ser sua
 docker compose build app
 docker compose run --rm app            # roda com network_mode: none; saída em ./saida/
 cp .env.example .env                   # defina POSTGRES_PASSWORD
@@ -47,8 +48,9 @@ docker compose --profile db up -d db
 docker compose --profile db run --rm app-db   # mesma classificação + registro da execução no PostgreSQL
 ```
 
-O serviço `app` roda **sem rede** (`network_mode: none`), o que prova que a decisão não depende de nenhum
-modelo. O PostgreSQL é opcional: guarda cada execução (`runs`) e as 659 decisões com a auditoria (`decisions`);
+O serviço `app` roda **sem rede** (`network_mode: none`): o `classify` não chama nenhum modelo, só usa as
+descrições e os embeddings já gerados e versionados em `artifacts/`. Os containers rodam com o uid 1000; se o seu
+for outro, exporte `APP_UID` e `APP_GID`. O PostgreSQL é opcional: guarda cada execução (`runs`) e as 659 decisões com a auditoria (`decisions`);
 reprocessar cria um novo `run_id` em vez de sobrescrever.
 
 ## O que cada comando gera
@@ -59,9 +61,10 @@ reprocessar cria um novo `run_id` em vez de sobrescrever.
 | `previsao.txt` (raiz, cópia idêntica em `artifacts/`) | Previsão e metodologia |
 | `artifacts/run_metadata.json` | Hashes SHA-256 dos anexos e artefatos, configuração, pesos do ranqueador, calibrador, limiar, contagens, validação cruzada, tempo |
 | `artifacts/decision_audit.jsonl` | Por questão: decisão, 5 candidatos com probabilidade, concordância entre sinais, origem |
-| `artifacts/validacao_cruzada_oof.jsonl` | Predições fora da amostra na folha-verdade (base da calibração e da previsão) |
+| `artifacts/validacao_cruzada_oof.jsonl` | Predições fora da amostra na folha-verdade (base da calibração, do limiar e da avaliação aninhada) |
 | `artifacts/data_audit.json` | Auditoria dos anexos |
-| `artifacts/experimentos.json` | Ablações (o que foi testado e descartado) |
+| `artifacts/experimentos.json` | Ablações (o que foi testado e descartado), com a avaliação aninhada de cada variante |
+| `artifacts/estresse_origem.json` | Teste de estresse: a mesma regra sem os sinais de assunto e disciplina de origem |
 
 ## Arquitetura
 
@@ -78,6 +81,7 @@ artifacts/ (versionados)            ▼
                                     │       Calibrator (logística: p do topo, margem, concordância)
                                     ▼
                             pipeline.py: validação cruzada na folha → limiar → decisão → contract.py
+                                         avaliação aninhada da regra → forecast.py (previsao.txt)
 ```
 
 | Módulo | Papel |
@@ -88,7 +92,7 @@ artifacts/ (versionados)            ▼
 | `profiles.py` | Texto que representa cada tema (caminho, subtemas, descrição e termos enriquecidos) |
 | `features.py` | Sinais por par (questão, tema de nível 1) |
 | `model.py` | Ranqueador, calibrador e entradas de confiança |
-| `pipeline.py` | Validação cruzada, escolha do limiar, decisões, metadados |
+| `pipeline.py` | Validação cruzada, escolha do limiar, avaliação aninhada, decisões, metadados |
 | `forecast.py` | `previsao.txt` |
 | `contract.py` | Validação automática do contrato do `publicacao.csv` |
 | `db.py` | Registro opcional no PostgreSQL |
@@ -105,7 +109,8 @@ corre o risco do irmão. A sugestão de subtema mais provável fica em `decision
 | Artefato | Origem | Como regenerar |
 |---|---|---|
 | `artifacts/temas_enriquecidos.jsonl` | `qwen2.5:14b` local (Ollama), temperatura 0, prompt `prompts/enriquecer_tema_v1.txt`. O modelo vê só o caminho do tema, os vizinhos e os subtemas, **nunca uma questão**. Gera descrição e termos típicos para os 371 temas selecionáveis | `PYTHONPATH=src python -m vicio_classifier.offline.enrich_temas --model qwen2.5:14b` (≈ 1h10) |
-| `artifacts/embeddings/questoes.npz`, `temas.npz` | `bge-m3` local (Ollama), vetores normalizados em float16 com o SHA-256 do texto de origem | `python -m vicio_classifier.offline.embed --what questoes` e `--what temas` (≈ 2 min) |
+| `artifacts/embeddings/questoes.npz`, `temas.npz` | `bge-m3` local (Ollama), vetores normalizados em float16 com o SHA-256 do texto de origem | `PYTHONPATH=src python -m vicio_classifier.offline.embed --what questoes` e `--what temas` (≈ 2 min) |
+| `artifacts/embeddings/temas_sem_enriquecimento.npz` | Igual, mas com o perfil do tema sem a descrição do LLM; só serve para a ablação do relatório | `PYTHONPATH=src python -m vicio_classifier.offline.embed --what temas --sem-enriquecimento` |
 | `artifacts/regras/leis.json` | **Curadoria manual**: 26 leis (número e expressões que as nomeiam) mapeadas para temas de nível 1 | Editar o JSON |
 | `artifacts/regras/artigos.json` | **Curadoria manual**: faixas de artigos do CP e do CPP mapeadas para temas, a partir da estrutura dos códigos | Editar o JSON |
 
@@ -118,7 +123,7 @@ offline de embeddings (que é "gerar embeddings", permitido antes da decisão).
 1. **Dicionários de leis e artigos** (`artifacts/regras/`): escritos por mim, sem olhar a folha-verdade, a partir
    dos números das leis e da divisão dos códigos. Quando a árvore tem o mesmo tema em duas disciplinas
    (por exemplo Maria da Penha em Penal e em Legislação Especial), os dois entram e o modelo aprende qual a equipe usa.
-2. **Revisão do enriquecimento**: conferi por amostragem; termos fracos ou genéricos ficam, porque o peso de cada
+2. **Revisão do enriquecimento**: conferi por amostragem; termos fracos ou genéricos ficaram, porque o peso de cada
    sinal é aprendido na folha-verdade. Os números de artigo que o modelo propôs num teste estavam errados, por isso
    o prompt proíbe citar artigos e os artigos vêm só do dicionário manual.
 3. **As 100 questões da folha-verdade** saem com o rótulo da equipe (`publicar` no tema da equipe, ou `fora`),
@@ -127,6 +132,9 @@ offline de embeddings (que é "gerar embeddings", permitido antes da decisão).
    com segurança, e dúvida vai para `revisar`, não para `fora`.
 5. **`extras_ids` vazio** nas decisões do sistema: não há sinal confiável para afirmar que um segundo tema é
    coberto, e a lista não deve ser uma coleção de alternativas.
+6. **Escolhas feitas olhando a folha-verdade**: a forma do calibrador (escala de 0 a 1 em vez de logit) e o alvo de
+   97% no limiar foram decididos depois de ver os resultados na folha. A avaliação aninhada mede a regra, mas não
+   consegue descontar essas escolhas; por isso a previsão fala em estimativa, não em garantia.
 
 ## Histórico
 
@@ -135,17 +143,19 @@ A etapa 1 do case (359 questões, LLM classificando e verificando) está em
 para a regra nova (decisão sem modelo de linguagem). Do código anterior ficaram as ideias de validação de
 dados e do contrato; o restante foi reescrito.
 
-## Verificações executadas (29/10/2026, macOS Apple Silicon, Docker Desktop 28.4)
+## Verificações executadas (02/11/2026, macOS Apple Silicon, Docker Desktop 28.4)
 
 | Verificação | Resultado |
 |---|---|
 | `python -m compileall -q src tests scripts` | OK |
-| `PYTHONPATH=src pytest -q` (local e dentro do container sem rede) | 29 testes passando |
+| `PYTHONPATH=src pytest -q` (local e dentro do container sem rede) | 31 testes passando no macOS; no container, 29 passando e 2 pulados (os testes da entrega versionada precisam do `publicacao.csv` e do `previsao.txt` da raiz, que não vão para a imagem) |
 | `python -m vicio_classifier audit` / `validate publicacao.csv` | OK: 659 questões, 377 temas (371 selecionáveis), contrato cumprido |
+| Clone limpo do GitHub + `classify` | `publicacao.csv` idêntico ao versionado |
 | `docker compose config --quiet`, `docker compose build app` | OK |
-| `docker compose run --rm app` (sem rede) | Mesmas 659 decisões e temas do macOS; confiança difere ≤ 0,0012 (BLAS) |
-| `docker compose --profile db run --rm app-db` | 2 execuções gravadas (`run_id` 1 e 2), 659 decisões cada, histórico preservado |
+| `docker compose run --rm app` (sem rede) | Mesmas 659 decisões e temas do macOS; confiança difere em até 0,0001 (biblioteca numérica) |
+| `docker compose --profile db run --rm app-db` | Cada execução vira um `run_id` novo com 659 decisões; as 3 execuções feitas até aqui continuam no banco |
 | Ollama no host: `qwen2.5:14b` (enriquecimento, 371 temas, 0 falhas) e `bge-m3` (embeddings) | OK |
 | Ollama em container (`--profile offline-llm`, CPU): `ollama pull bge-m3` + serviço `embed` | 659 embeddings em 2 min 16 s; cosseno ≥ 0,9998 com o cache versionado |
 
-Não verificado: a precisão real nas questões avaliadas (depende do gabarito da equipe).
+Não verificado: a precisão real nas questões avaliadas (depende do gabarito da equipe) e o Docker num Linux de verdade
+(só no Docker Desktop do macOS).

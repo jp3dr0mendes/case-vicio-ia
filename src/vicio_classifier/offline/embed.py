@@ -4,7 +4,7 @@ Os vetores ficam em cache versionado (artifacts/embeddings/*.npz), com o hash SH
 texto de cada item. O comando `classify` só lê esse cache; se o texto de uma questão mudar
 (ou ela não estiver no cache), a questão vai para revisão em vez de chamar o modelo.
 
-Uso: python -m vicio_classifier.offline.embed --what questoes|temas
+Uso: PYTHONPATH=src python -m vicio_classifier.offline.embed --what questoes|temas [--sem-enriquecimento]
 """
 from __future__ import annotations
 
@@ -44,6 +44,8 @@ def main() -> None:
     ap.add_argument("--data-dir", default="data/anexos")
     ap.add_argument("--artifacts-dir", default="artifacts")
     ap.add_argument("--model", default="bge-m3")
+    ap.add_argument("--sem-enriquecimento", action="store_true",
+                    help="temas sem a descrição gerada por LLM (para a ablação)")
     args = ap.parse_args()
     data, art = Path(args.data_dir), Path(args.artifacts_dir)
     if args.what == "questoes":
@@ -52,9 +54,10 @@ def main() -> None:
             art / "embeddings" / "questoes.npz")
     else:
         tax = Taxonomy(load_temas(data / "temas.csv"))
-        prof = tema_profiles(tax, art)
+        prof = tema_profiles(tax, art, use_enrichment=not args.sem_enriquecimento)
         ids = sorted(prof)
-        run([str(i) for i in ids], [prof[i] for i in ids], args.model, art / "embeddings" / "temas.npz")
+        name = "temas_sem_enriquecimento.npz" if args.sem_enriquecimento else "temas.npz"
+        run([str(i) for i in ids], [prof[i] for i in ids], args.model, art / "embeddings" / name)
 
 
 if __name__ == "__main__":

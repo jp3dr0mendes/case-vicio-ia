@@ -1,0 +1,11 @@
+{
+  "limiar": 0.945,
+  "normal": {
+    "cobertura": 0.253,
+    "precisao": 0.9723320158102767
+  },
+  "sem_origem_no_teste": {
+    "cobertura": 0.16,
+    "precisao": 0.95
+  }
+}

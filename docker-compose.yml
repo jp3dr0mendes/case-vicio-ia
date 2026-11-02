@@ -1,5 +1,5 @@
 # Classificação (sem modelo de linguagem):
-#   docker compose run --rm app
+#   mkdir -p saida && docker compose run --rm app
 # Com registro da execução no PostgreSQL:
 #   docker compose --profile db up -d db && docker compose --profile db run --rm app-db
 # Etapa offline (embeddings de questões novas) com Ollama em container:
@@ -10,6 +10,8 @@ services:
   app:
     build: .
     image: vicio-classifier:2.0
+    # Roda com o seu uid para poder escrever em ./saida (no Linux, crie a pasta antes: mkdir -p saida)
+    user: "${APP_UID:-1000}:${APP_GID:-1000}"
     volumes:
       - ./saida:/app/saida
     command: ["--artifacts-dir", "/app/saida/artifacts", "classify", "--out", "/app/saida/publicacao.csv"]
@@ -36,6 +38,7 @@ services:
     image: vicio-classifier:2.0
     build: .
     profiles: ["db"]
+    user: "${APP_UID:-1000}:${APP_GID:-1000}"
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-vicio}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-vicio}
     volumes:
@@ -58,6 +61,7 @@ services:
     image: vicio-classifier:2.0
     build: .
     profiles: ["offline-llm"]
+    user: "${APP_UID:-1000}:${APP_GID:-1000}"
     environment:
       OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://ollama:11434}
     volumes:

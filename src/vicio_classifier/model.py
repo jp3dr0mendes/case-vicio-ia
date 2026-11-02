@@ -2,8 +2,9 @@
 
 p(tema | questão) = softmax(w · x) sobre os candidatos de nível 1. O treino maximiza a
 probabilidade do conjunto de temas corretos (tema central e extras, levados ao nível 1).
-A calibração mapeia p_top -> P(acerto) com regressão logística em logit(p_top), ajustada
-em predições fora da amostra (validação cruzada na folha-verdade).
+A calibração é uma regressão logística sobre três entradas limitadas a [0, 1] ou [0, 4]:
+probabilidade do topo, margem para o 2º tema e concordância entre sinais, ajustada em predições
+fora da amostra (validação cruzada na folha-verdade).
 """
 from __future__ import annotations
 
@@ -61,12 +62,7 @@ class Ranker:
 
 
 AGREEMENT_SIGNALS = ["emb", "tfidf", "knn", "origem"]
-CONF_FEATURES = ["logit_p_top", "logit_margem", "concordancia"]
-
-
-def _logit(p: np.ndarray) -> np.ndarray:
-    p = np.clip(p, 1e-4, 1 - 1e-4)
-    return np.log(p / (1 - p))
+CONF_FEATURES = ["p_top", "margem", "concordancia"]
 
 
 def confidence_inputs(P: np.ndarray, X: np.ndarray, feature_names: list[str]) -> tuple[np.ndarray, np.ndarray]:
@@ -74,6 +70,10 @@ def confidence_inputs(P: np.ndarray, X: np.ndarray, feature_names: list[str]) ->
 
     concordancia = quantos sinais independentes (embedding, TF-IDF, kNN, assunto de origem)
     apontam, sozinhos, para o mesmo tema que o ranqueador escolheu (0 a 4).
+
+    As entradas ficam na escala de probabilidade, não de logit: em logit, um softmax muito
+    confiante (p_top = 0,9999) vira um valor extremo que a regressão extrapola. Na avaliação
+    aninhada, essa versão dava precisão de 91% contra 96% da escala limitada.
     """
     order = np.argsort(-P, axis=1)
     top, second = order[:, 0], order[:, 1]
@@ -85,7 +85,7 @@ def confidence_inputs(P: np.ndarray, X: np.ndarray, feature_names: list[str]) ->
             sig = X[:, :, feature_names.index(name)]
             has_signal = sig.max(axis=1) > 0
             agree += ((sig.argmax(axis=1) == top) & has_signal).astype(float)
-    Z = np.stack([_logit(p_top), _logit(np.clip(p_top - p_2, 1e-4, 1)), agree], axis=1)
+    Z = np.stack([p_top, p_top - p_2, agree], axis=1)
     return top, Z
 
 
